@@ -1,6 +1,74 @@
+/* Global style */
+
 body {
     background-color: black;
     font-family: "eb garamond", sans-serif;
     color: azure;
     text-align: center;
+    width: 75%;
+    margin: 0 auto;
+}
+ /* Headings */
+
+.heading {
+    text-align: center;
+    font-size: 50px;
+}
+
+.sub-heading {
+    font-size: 30px;
+}
+
+.can-you-win {
+    font-size: 20px;
+}
+/* Game buttons */
+
+.choice {
+    text-align: center;
+    display: inline-block;
+}
+
+.stone, .wand, .cloak {
+    width: 40%;
+    height: 60px;
+    background-color: #8505a8;
+    color: azure;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 10px;
+}
+
+/* Score area */
+
+.score-area, p {
+    text-align: center;
+    display: inline-block;
+    padding: 0 30px;
+    
+}
+
+/* Game area */
+
+.game-area {
+    display: inline-block;
+}
+
+#user-side-image {
+    width: 350px;
+    height: 350px;
+    background-color: azure;
+    position: relative;
+    float: left;
+    margin: 0 30px;
+    
+}
+
+#computer-side-image {
+    width: 350px;
+    height: 350px;
+    background-color: azure;
+    position: relative;
+    float: right;
+    
 }

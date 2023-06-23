@@ -30,11 +30,6 @@ html {
 /* Game buttons */
 
 .choice {
-    text-align: center;
-    width: 100%;
-}
-
-.stone, .wand, .cloak {
     height: 60px;
     width: 30%;
     background-color: #8505a8;
@@ -44,6 +39,7 @@ html {
     display: inline-block;
     margin-top: 20px;
 }
+
 
 /* Score area */
 

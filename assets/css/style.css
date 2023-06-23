@@ -40,16 +40,6 @@ html {
     margin-top: 20px;
 }
 
-
-/* Score area */
-
-.score-area, p {
-    text-align: center;
-    display: inline-block;
-    padding: 0 30px;
-    
-}
-
 /* Game area */
 
 .game-area {
@@ -90,6 +80,12 @@ html {
     width: 100%;
     margin-top: 2px;
     text-align: center;
+}
+
+/* game result text */
+
+#decision {
+    font-size: 30px;
 }
 /* Game rules in footer */
 footer {

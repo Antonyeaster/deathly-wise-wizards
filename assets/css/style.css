@@ -67,7 +67,8 @@ html {
     background-color: azure;
     position: relative;
     float: left;
-    margin: 0 30px;
+    margin: 0 40px;
+    border: 3px solid #8505a8;
     
 }
 
@@ -77,6 +78,8 @@ html {
     background-color: azure;
     position: relative;
     float: right;
+    margin: 0 40px;
+    border: 3px solid #8505a8;
     
 }
 

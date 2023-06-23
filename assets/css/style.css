@@ -8,6 +8,11 @@ body {
     width: 75%;
     margin: 0 auto;
 }
+
+html {
+    min-height: 100%;
+    position: relative;
+}
  /* Headings */
 
 .heading {
@@ -26,17 +31,18 @@ body {
 
 .choice {
     text-align: center;
-    display: inline-block;
+    width: 100%;
 }
 
 .stone, .wand, .cloak {
-    width: 40%;
     height: 60px;
+    width: 30%;
     background-color: #8505a8;
     color: azure;
     border-radius: 10px;
-    display: inline-block;
     padding: 10px;
+    display: inline-block;
+    margin-top: 20px;
 }
 
 /* Score area */
@@ -52,11 +58,12 @@ body {
 
 .game-area {
     display: inline-block;
+    width: fit-content;
 }
 
 #user-side-image {
-    width: 350px;
-    height: 350px;
+    width: 250px;
+    height: 250px;
     background-color: azure;
     position: relative;
     float: left;
@@ -65,10 +72,24 @@ body {
 }
 
 #computer-side-image {
-    width: 350px;
-    height: 350px;
+    width: 250px;
+    height: 250px;
     background-color: azure;
     position: relative;
     float: right;
     
+}
+/* Game rules in footer */
+footer {
+    position: absolute;
+    width: 75%;
+    height: 50px;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.middle-rule {
+    color: #8505a8;
 }

@@ -4,7 +4,7 @@
 document.addEventListener(DOMContentLoaded, function() {
     let buttons = document.getElementsByTagName("button");
 
-    for (button of buttons) {
+    for (let button of buttons) {
         button.addEventListener("click", function() {
         let playerChoice = this.getAttribue(data-type);
         runGame(playerChoice);
@@ -14,8 +14,8 @@ document.addEventListener(DOMContentLoaded, function() {
 
 
 
-function runGame() {
-
+function runGame(playerChoice) {
+    
 }
 
 function checkAnswer() {

@@ -4,7 +4,7 @@ let computerImage = document.getElementById('computer-side-image');
 let playerScore = document.getElementById('player-score');
 let computerScore = document.getElementById('computer-score');
 let result = document.getElementById('decision');
-let buttons = document.getElementsByTagName('button');
+let buttons = document.getElementsByClassName('selected');
 
 for (let button of buttons) {
     button.addEventListener('click', function() {
@@ -13,12 +13,19 @@ for (let button of buttons) {
     })
 }
 
+/**
+ * The main function that is called when a player clicks on their choice, 
+ * which then creates a random selection for the computer between 0 - 2. 
+ */
+
 function runGame(playerChoice) {
-    playerImage.src = `assets/images/${choices[playerChoice]}.webp`;
-    playerImage,alt = choices[playerChoice]
+    playerImage = document.querySelector("#user-image");      
+    playerImage.src = `assets/images/${choices[playerChoice].replaceAll(' ','-')}.webp`;
+    playerImage.alt = choices[playerChoice]
     
     let computerChoice = Math.floor(Math.random() * 3)
-    computerChoice.src = `assets/images/${choices[computerChoice]}.webp`;
+    computerImage = document.querySelector("#computer-image");
+    computerImage.src = `assets/images/${choices[computerChoice].replaceAll(' ','-')}.webp`;
     computerChoice.alt = choices[computerChoice];
 
     let result = checkWinner(choices[playerChoice], choices[computerChoice]);
@@ -26,6 +33,16 @@ function runGame(playerChoice) {
     updateScores(result)
 }
 
-function checkWinner() {
+function updateScores(result) {
+    
+    
+}
 
+function checkWinner(playerChoice, computerChoice) {
+    if (playerChoice === 'resurrection stone' && computerChoice === 'elder wand'){
+        result.innerHTML = 'WOW, you beat the Dark Lord';
+        return 'player'
+    } else if (playerChoice === 'elder wand' && computerChoice === 'resurrection stone') {
+        result.innerHTML = 'The Dark Lord has outsmarted you this time, Try again!'
+    }    
 }

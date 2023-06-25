@@ -21,9 +21,9 @@
     <h2 class="sub-heading">Choose Your Wizardry Weapon</h2>
     <!--Button choice -->
     <div>
-        <button aria-label="Resurrection Stone" class="choice" data-type="0">Resurrection Stone</button>
-        <button aria-label="Elder Wand" class="choice" data-type="1">Elder Wand</button>
-        <button aria-label="Invisibility Cloak" class="choice" data-type="2">Invisibility Cloak</button>
+        <button aria-label="Resurrection Stone" class="selected" data-type="0">Resurrection Stone</button>
+        <button aria-label="Elder Wand" class="selected" data-type="1">Elder Wand</button>
+        <button aria-label="Invisibility Cloak" class="selected" data-type="2">Invisibility Cloak</button>
     </div>
     <div class="can-you-win">
         <h3>Do you have what it takes to beat the dark lord?</h3>
@@ -36,13 +36,13 @@
         </div>
         <div id="user-side-image">
             <h3 class="scores">Player Score: <span id="player-score">0</span></h3>
-            <img class="run-game-image" src="assets/images/deathly-hallows-black.webp"
+            <img id="user-image" class="run-game-image" src="assets/images/deathly-hallows-black.webp"
                 alt="Deathly hallows symbol, triangle with a circle in the middle and a line from top to bottom">
 
         </div>
         <div id="computer-side-image">
-            <h3 class="scores">Dark Lord Score: <span id="computer-score">0</span></h3>
-            <img class="run-game-image" src="assets/images/deathly-hallows-black.webp"
+            <h3 class="scores">Dark Lords Score: <span id="computer-score">0</span></h3>
+            <img id="computer-image" class="run-game-image" src="assets/images/deathly-hallows-black.webp"
                 alt="Deathly hallows symbol, triangle with a circle in the middle and a line from top to bottom">
 
         </div>

@@ -38,11 +38,29 @@ function updateScores(result) {
     
 }
 
+/**
+ * To check who is the winner with the possible outcomes listed individually 
+ */
+
 function checkWinner(playerChoice, computerChoice) {
     if (playerChoice === 'resurrection stone' && computerChoice === 'elder wand'){
         result.innerHTML = 'WOW, you beat the Dark Lord';
-        return 'player'
+        return 'user'
     } else if (playerChoice === 'elder wand' && computerChoice === 'resurrection stone') {
-        result.innerHTML = 'The Dark Lord has outsmarted you this time, Try again!'
-    }    
+        result.innerHTML = 'The Dark Lord has outsmarted you this time, try again!'
+        return 'computer'
+    } else if (playerChoice === 'resurrection stone' && computerChoice === 'invisibility cloak') {
+        result.innerHTML = 'The Dark Lord is wise! Try harder next time!'
+        return 'computer'
+    }  else if (playerChoice === 'invisibility cloak' && computerChoice === 'resurrection stone') {
+        result.innerHTML = "That's totally barbaric! Well done, You win."
+        return 'user'
+    } else if (playerChoice === 'elder wand' && computerChoice === 'invisibility cloak') {
+        result.innerHTML = "Now that's how you swish and flick! Great work, you win!"
+        return 'user'
+    } else if (playerChoice === 'invisibility cloak' && computerChoice === 'elder wand') {
+        result.innerHTML = "The Dark Lord rises again! Try again"
+        return 'computer'
+    } else (playerChoice === computerChoice) 
+        result.innerHTML = "I guess a Draw is ok..... for a Muggle! Let's get the Dark lord"
 }

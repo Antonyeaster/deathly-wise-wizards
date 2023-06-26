@@ -34,14 +34,17 @@ function runGame(playerChoice) {
 }
 
 function updateScores(result) {
+    if (result === 'user') {
+        incrementUserScore();
+    } else if (result === 'computer') {
+        incrementComputerScore();
+    }  
     
-    
-}
+};
 
 /**
  * To check who is the winner with the possible outcomes listed individually 
  */
-
 function checkWinner(playerChoice, computerChoice) {
     if (playerChoice === 'resurrection stone' && computerChoice === 'elder wand'){
         result.innerHTML = 'WOW, you beat the Dark Lord';
@@ -62,5 +65,22 @@ function checkWinner(playerChoice, computerChoice) {
         result.innerHTML = "The Dark Lord rises again! Try again"
         return 'computer'
     } else (playerChoice === computerChoice) 
-        result.innerHTML = "I guess a Draw is ok..... for a Muggle! Let's get the Dark lord"
+        result.innerHTML = "I guess a Draw is ok..... FOR A MUGGLE! Let's beat the Dark lord"
+}
+
+/**
+ * Gets the score for the user and increments by 1 when the user wins
+ */
+
+function incrementUserScore() {
+    let previousScore = parseInt(document.getElementById('player-score').innerText);
+    document.getElementById('player-score').innerText = ++previousScore; 
+}
+
+/**
+ * Gets the score for the computer and increments by 1 when the computer wins
+ */
+function incrementComputerScore() {
+    let previousScore = parseInt(document.getElementById('computer-score').innerText);
+    document.getElementById('computer-score').innerText = ++previousScore;
 }

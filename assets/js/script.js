@@ -82,3 +82,8 @@ function incrementComputerScore() {
     let previousScore = parseInt(document.getElementById('computer-score').innerText);
     document.getElementById('computer-score').innerText = ++previousScore;
 }
+
+function rulesPopUp() {
+    alert("Rules\nElder Wand Destroys Invisibility Cloak\nInvisibility Cloaks outsmarts Resurrection Stone\nResurrection Stone eliminates Elder Wand")
+}
+

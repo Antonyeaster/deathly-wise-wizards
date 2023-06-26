@@ -24,6 +24,11 @@ html {
     font-size: 30px;
 }
 
+#info {
+    font-size: 24px;
+    color: #8505a8;
+}
+
 .can-you-win {
     font-size: 20px;
 }

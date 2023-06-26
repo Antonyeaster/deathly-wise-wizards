@@ -84,6 +84,6 @@ function incrementComputerScore() {
 }
 
 function rulesPopUp() {
-    alert("Rules\nElder Wand Destroys Invisibility Cloak\nInvisibility Cloaks outsmarts Resurrection Stone\nResurrection Stone eliminates Elder Wand")
+    alert("Rules\nElder Wand Destroys Invisibility Cloak\nInvisibility Cloaks Outsmarts Resurrection Stone\nResurrection Stone Eliminates Elder Wand")
 }
 

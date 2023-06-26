@@ -27,6 +27,7 @@ html {
 #info {
     font-size: 24px;
     color: #8505a8;
+    cursor: pointer;
 }
 
 .can-you-win {
@@ -43,6 +44,7 @@ html {
     padding: 10px;
     display: inline-block;
     margin-top: 20px;
+    cursor: pointer;
 }
 
 /* Game area */

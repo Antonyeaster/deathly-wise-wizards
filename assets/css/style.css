@@ -7,6 +7,7 @@ body {
     text-align: center;
     width: 75%;
     margin: 0 auto;
+    min-height: 100vh;
 }
 
 html {
@@ -49,10 +50,6 @@ html {
 
 /* Game area */
 
-.game-area {
-    display: inline-block;
-    width: fit-content;
-}
 
 #user-side-image {
     width: 300px;
@@ -94,16 +91,17 @@ html {
 
 #decision {
     font-size: 30px;
+    position: relative;
 }
 /* Game rules in footer */
 footer {
     position: absolute;
     width: 75%;
-    height: 50px;
+    height: 80px;
     text-align: center;
     margin-top: 5px;
     font-size: 18px;
-    padding: 10px;
+    bottom: 0;
 }
 
 .middle-rule {

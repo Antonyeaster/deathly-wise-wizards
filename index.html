@@ -16,22 +16,20 @@
 <body>
     <!-- Main heading -->
     <h1 class="heading">Deathly Wise Wizards <i class="fa-solid fa-hat-wizard" style="color: #8505a8;"></i></h1>
-    <h2 class="sub-heading">Choose Your Wizardry Weapon <i id="info" class="fa fa-info-circle" onclick="rulesPopUp();"></i></h2>
-    <!--Button choice -->
-    <div>
-        <button aria-label="Resurrection Stone" class="selected" data-type="0">Resurrection Stone</button>
-        <button aria-label="Elder Wand" class="selected" data-type="1">Elder Wand</button>
-        <button aria-label="Invisibility Cloak" class="selected" data-type="2">Invisibility Cloak</button>
-    </div>
-    <div class="can-you-win">
-        <h3>Do you have what it takes to beat the Dark Lord?</h3>
-    </div>
-    <!-- Game area with scores and inmages for choice selected -->
-    <div class="game-area">
 
-        <div class="scores-area">
-
+    <section class="game-area">
+        <h2 class="sub-heading">Choose Your Wizardry Weapon <i id="info" class="fa fa-info-circle"
+                onclick="rulesPopUp();"></i></h2>
+        <!--Button choice -->
+        <div>
+            <button aria-label="Resurrection Stone" class="selected" data-type="0">Resurrection Stone</button>
+            <button aria-label="Elder Wand" class="selected" data-type="1">Elder Wand</button>
+            <button aria-label="Invisibility Cloak" class="selected" data-type="2">Invisibility Cloak</button>
         </div>
+        <div class="can-you-win">
+            <h3>Do you have what it takes to beat the Dark Lord?</h3>
+        </div>
+        <!-- Game area with scores and inmages for choice selected -->
         <div id="user-side-image">
             <h3 class="scores">Player Score: <span id="player-score">0</span></h3>
             <img id="user-image" class="run-game-image" src="assets/images/deathly-hallows-black.webp"
@@ -42,12 +40,10 @@
             <h3 class="scores">Dark Lords Score: <span id="computer-score">0</span></h3>
             <img id="computer-image" class="run-game-image" src="assets/images/deathly-hallows-black.webp"
                 alt="Deathly hallows symbol, which changes apon click to either a wand, cloak or stone">
-
         </div>
-    </div>
-    <div>
-        <span id="decision">Ready To Duel?</span>
-    </div>
+    </section>
+
+    <span id="decision">Ready To Duel?</span>
     <!-- Game rules in the footer -->
     <footer class="game-rules">
         <p><u>Rules</u><br>Elder Wand Destroys Invisibility Cloak | <span class="middle-rule">Invisibility Cloaks Hides

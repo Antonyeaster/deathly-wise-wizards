@@ -53,35 +53,43 @@ html {
     display: inline-block;
     align-items: center;
 }
-
+ /* result area */
 .result-area {
     display: flex;
-    justify-content: center;
+    margin: 0 auto;
+    max-width: 800px;
 }
-
+/* images inside results area */
 #user-side-image {
     width: 100%;
     background-color: azure;
     position: relative;
     float: left;
     border: 3px solid #8505a8;
+    background-size: cover;
     
 }
 
 #computer-side-image {
     width: 100%;
-    height: 100%;
     background-color: azure;
     position: relative;
     float: right;
     border: 3px solid #8505a8;
-    
+    background-size: cover;
+}
+
+#user-image {
+    height: 100%;
+}
+
+#computer-image {
+    height: 100%;    
 }
 
 .run-game-image {
     object-fit: cover;
     width: 100%;
-    height: 100%;
 }
 
 .scores {
@@ -103,7 +111,7 @@ html {
 footer {
     position: absolute;
     width: 75%;
-    height: 80px;
+    height: 100px;
     text-align: center;
     margin-top: 5px;
     font-size: 18px;
@@ -112,19 +120,7 @@ footer {
 .middle-rule {
     color: #8505a8;
 }
-
-@media screen and (min-width: 900px) {
-    #user-side-image {
-        width: 100%;
-        height: 100%;
-    }
-
-    .run-game-image {
-        width: 100%;
-        height: 100%;
-    }
-}
-
+/* Adjust text size for screen size 500px and below */
 @media screen and (max-width: 500px) {
     .scores {
         font-size: 15px;

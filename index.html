@@ -21,6 +21,31 @@
         <h2 class="sub-heading">Choose Your Wizardry Weapon <i id="info" class="fa fa-info-circle"
                 onclick="rulesPopUp();"></i></h2>
 
+        <button id="myRulesBtn">Game Rules</button>
+
+        <!-- The Modal -->
+        <div id="myRulesModal" class="modal-rules">
+
+            <!-- Modal content -->
+            <div class="modal-rules-content">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2>Rules</h2>
+                </div>
+                <div class="rules-modal-body">
+                    <div>
+                        <img class="modal-image" src="assets/images/elder-wand.webp" alt="Elder Wand">
+                        <img class="modal-image" src="assets/images/invisibility-cloak.webp" alt="Invisibility Cloak">
+                        <img class="modal-image" src="assets/images/resurrection-stone.webp" alt="Resurrection Stone">
+                    </div>
+                    <p>Elder Wand Destroys Invisibility Cloak<br>Invisibility Cloaks Outsmarts Resurrection
+                        Stone<br>Resurrection Stone Eliminates Elder Wand
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
         <!--Button choice -->
         <div>
             <button aria-label="Resurrection Stone" class="selected" data-type="0">Resurrection Stone</button>
@@ -48,6 +73,7 @@
     <div>
         <span id="decision">Ready To Duel?</span>
     </div>
+
     <!-- Game rules in the footer -->
     <footer class="game-rules">
         <p><u>Rules</u><br>Elder Wand Destroys Invisibility Cloak | <span class="middle-rule">Invisibility Cloaks Hides

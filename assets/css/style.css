@@ -159,3 +159,57 @@ footer {
         font-size: 15px;
     }
 }
+
+.modal-rules {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 150px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-rules-content {
+    position: relative;
+    background-color: #8505a8;
+    color: azure;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 60%;
+    height: 300px;
+  }
+/* Modal Images */
+  .modal-image {
+    width: 20%;
+    display: flex;
+}
+  
+  /* The Close Button */
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #8505a8;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modal-header {
+    padding: 2px 16px;
+    background-color: #000;
+    color: white;
+  }
+  
+  .rules-modal-body {padding: 2px 16px;}
+  

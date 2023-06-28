@@ -1,5 +1,10 @@
 /* Global style */
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-color: black;
     font-family: "eb garamond", sans-serif;
@@ -13,7 +18,8 @@ html {
     min-height: 100%;
     position: relative;
 }
- /* Headings */
+
+/* Headings */
 
 .heading {
     text-align: center;
@@ -33,6 +39,7 @@ html {
 .can-you-win {
     font-size: 20px;
 }
+
 /* Game buttons */
 
 .selected {
@@ -41,9 +48,8 @@ html {
     background-color: #8505a8;
     color: azure;
     border-radius: 10px;
-    padding: 10px;
     display: inline-block;
-    margin-top: 20px;
+    margin-top: 10px;
     cursor: pointer;
 }
 
@@ -53,13 +59,17 @@ html {
     display: inline-block;
     align-items: center;
 }
- /* result area */
+
+/* result area */
+
 .result-area {
     display: flex;
     margin: 0 auto;
     max-width: 800px;
 }
+
 /* images inside results area */
+
 #user-side-image {
     width: 100%;
     background-color: azure;
@@ -67,7 +77,7 @@ html {
     float: left;
     border: 3px solid #8505a8;
     background-size: cover;
-    
+
 }
 
 #computer-side-image {
@@ -84,7 +94,7 @@ html {
 }
 
 #computer-image {
-    height: 100%;    
+    height: 100%;
 }
 
 .run-game-image {
@@ -107,7 +117,9 @@ html {
     font-size: 30px;
     text-align: center;
 }
+
 /* Game rules in footer */
+
 footer {
     position: absolute;
     width: 75%;
@@ -120,14 +132,30 @@ footer {
 .middle-rule {
     color: #8505a8;
 }
+
 /* Adjust text size for screen size 500px and below */
+
 @media screen and (max-width: 500px) {
     .scores {
-        font-size: 15px;
+        font-size: 13px;
     }
 
     #decision {
         font-size: 20px;
     }
 }
-    
+
+@media screen and (max-width: 550px) {
+    .selected {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 0 auto;
+        width: 50%;
+    }
+
+    .can-you-win {
+        font-size: 15px;
+    }
+}

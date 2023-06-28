@@ -15,7 +15,6 @@ for (let button of buttons) {
  * The main function that is called when a player clicks on their choice, 
  * which then creates a random selection for the computer between 0 - 2. 
  */
-
 function runGame(playerChoice) {
     playerImage = document.querySelector("#user-image");
     playerImage.src = `assets/images/${choices[playerChoice].replaceAll(' ', '-')}.webp`;
@@ -30,14 +29,15 @@ function runGame(playerChoice) {
 
     updateScores(result)
 }
-
+/**
+ * To check who won the game and use the increment score function
+ */
 function updateScores(result) {
     if (result === 'user') {
         incrementUserScore();
     } else if (result === 'computer') {
         incrementComputerScore();
     }
-
 }
 
 /**
@@ -69,7 +69,6 @@ function checkWinner(playerChoice, computerChoice) {
 /**
  * Gets the score for the user and increments by 1 when the user wins
  */
-
 function incrementUserScore() {
     let previousScore = parseInt(document.getElementById('player-score').innerText);
     document.getElementById('player-score').innerText = ++previousScore;
@@ -86,4 +85,3 @@ function incrementComputerScore() {
 function rulesPopUp() {
     alert("Rules\nElder Wand Destroys Invisibility Cloak\nInvisibility Cloaks Outsmarts Resurrection Stone\nResurrection Stone Eliminates Elder Wand")
 }
-

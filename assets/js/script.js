@@ -3,6 +3,9 @@ let playerImage = document.getElementById('user-side-image');
 let computerImage = document.getElementById('computer-side-image');
 let result = document.getElementById('decision');
 let buttons = document.getElementsByClassName('selected');
+let modal = document.getElementById("myRulesModal");
+let btn = document.getElementById("myRulesBtn");
+let span = document.getElementsByClassName("close")[0];
 
 for (let button of buttons) {
     button.addEventListener('click', function () {
@@ -30,7 +33,7 @@ function runGame(playerChoice) {
     updateScores(result)
 }
 /**
- * To check who won the game and use the increment score function
+ * To check who won the game and use the increment score function.
  */
 function updateScores(result) {
     if (result === 'user') {
@@ -41,7 +44,7 @@ function updateScores(result) {
 }
 
 /**
- * To check who is the winner with the possible outcomes listed individually 
+ * To check who is the winner with the possible outcomes listed individually.
  */
 function checkWinner(playerChoice, computerChoice) {
     if (playerChoice === 'resurrection stone' && computerChoice === 'elder wand') {
@@ -67,7 +70,7 @@ function checkWinner(playerChoice, computerChoice) {
 }
 
 /**
- * Gets the score for the user and increments by 1 when the user wins
+ * Gets the score for the user and increments by 1 when the user wins.
  */
 function incrementUserScore() {
     let previousScore = parseInt(document.getElementById('player-score').innerText);
@@ -75,37 +78,33 @@ function incrementUserScore() {
 }
 
 /**
- * Gets the score for the computer and increments by 1 when the computer wins
+ * Gets the score for the computer and increments by 1 when the computer wins.
  */
 function incrementComputerScore() {
     let previousScore = parseInt(document.getElementById('computer-score').innerText);
     document.getElementById('computer-score').innerText = ++previousScore;
 }
 
-function rulesPopUp() {
-    alert("Rules\nElder Wand Destroys Invisibility Cloak\nInvisibility Cloaks Outsmarts Resurrection Stone\nResurrection Stone Eliminates Elder Wand")
-}
-
-// Get the modal
-var modal = document.getElementById("myRulesModal");
-
-// Get the button that opens the modal
-var btn = document.getElementById("myRulesBtn");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks the button, open the modal 
+/**
+ * For modal use, when the game rules button is clicked 
+ * the display of the modal is then visable.
+ */
 btn.onclick = function() {
   modal.style.display = "block";
 }
 
-// When the user clicks on <span> (x), close the modal
+/**
+ * For modal use, when the X button is clicked 
+ * the display of the modal is then closed and display goes back to none.
+ */
 span.onclick = function() {
   modal.style.display = "none";
 }
 
-// When the user clicks anywhere outside of the modal, close it
+/**
+ * To allow the user to click anywhere outside the modal to close
+ * it and revert the display back to none.
+ */
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";

@@ -7,6 +7,10 @@ let modal = document.getElementById("myRulesModal");
 let btn = document.getElementById("myRulesBtn");
 let span = document.getElementsByClassName("close")[0];
 
+/**
+ * To add event listener to game choice buttons 
+ * and run player choice.
+ */
 for (let button of buttons) {
     button.addEventListener('click', function () {
         let playerChoice = this.getAttribute('data-type');
@@ -44,7 +48,8 @@ function updateScores(result) {
 }
 
 /**
- * To check who is the winner with the possible outcomes listed individually.
+ * To check who is the winner with the possible 
+ * outcomes listed individually.
  */
 function checkWinner(playerChoice, computerChoice) {
     if (playerChoice === 'resurrection stone' && computerChoice === 'elder wand') {

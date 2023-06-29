@@ -160,6 +160,12 @@ footer {
     }
 }
 
+@media screen and (max-width: 700px) {
+    .modal-rules-body p {
+        font-size: 10px;
+    }
+}
+
 .modal-rules {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
@@ -182,19 +188,26 @@ footer {
     margin: auto;
     padding: 0;
     border: 1px solid #888;
-    width: 60%;
-    height: 60%;
+    width: 40%;
   }
 
-/* Modal Images */
+  .modal-rules-body {
+    font-size: 1.5rem;
+    margin: 2rem;
+  }
 
-.modal-image1, .modal-image2, .modal-image3{
-    width: 20%;
-    display: flex;
-    flex-direction: row;
-}
+  /* Game rules button */
+
+  #myRulesBtn {
+    background-color: #8505a8;
+    width: 30%;
+    margin: 1rem;
+    padding: 10px;
+    border-radius: 10px;
+    color: azure;
+  } 
   
-  /* The Close Button */
+  /* Close button */
 
   .close {
     color: white;
@@ -216,5 +229,4 @@ footer {
     color: white;
   }
   
-  .rules-modal-body {padding: 2px 16px;}
   

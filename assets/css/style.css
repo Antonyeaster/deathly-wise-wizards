@@ -248,5 +248,16 @@ footer {
     background-color: #8505a8;
     width: 75%;
     height: 75%;
+    margin: 0 auto;
+  }
+
+  #play-game-modal-btn {
+    width: 20%;
+    background-color: #000;
+    color: #8505a8;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    padding: 20px;
+    border-radius: 10px;
   }
   

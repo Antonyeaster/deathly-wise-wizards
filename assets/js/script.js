@@ -115,3 +115,12 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+/**
+ * For page load modal to be displayed when the site is loaded
+ */
+window.onload = function() {
+    document.getElementById('play-game-btn').onclick = function () {
+        document.getElementById('page-load-modal').style.display = 'none'
+    }
+}

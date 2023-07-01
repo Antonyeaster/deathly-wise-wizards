@@ -166,6 +166,21 @@ footer {
     }
 }
 
+@media screen and (max-width: 1100px) {
+    .page-load-content p {
+        font-size: 1rem;
+    }
+
+    .page-load-header h2 {
+        font-size: 2rem;
+    }
+
+    #play-game-modal-btn {
+        width: 10%;
+        font-size: 1rem;
+    }
+}
+
 .modal-rules {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */

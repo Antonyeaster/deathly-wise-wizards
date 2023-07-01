@@ -1,19 +1,19 @@
-let choices = ['resurrection stone', 'elder wand', 'invisibility cloak'];
-let playerImage = document.getElementById('user-side-image');
-let computerImage = document.getElementById('computer-side-image');
-let result = document.getElementById('decision');
-let buttons = document.getElementsByClassName('selected');
+let choices = ["resurrection stone", "elder wand", "invisibility cloak"];
+let playerImage = document.getElementById("user-side-image");
+let computerImage = document.getElementById("computer-side-image");
+let result = document.getElementById("decision");
+let buttons = document.getElementsByClassName("selected");
 let modal = document.getElementById("myRulesModal");
-let btn = document.getElementById("myRulesBtn");
-let span = document.getElementsByClassName("close")[0];
+let gameRuleBtn = document.getElementById("myRulesBtn");
+let closeBtn = document.getElementsByClassName("close")[0];
 
 /**
  * To add event listener to game choice buttons 
  * and run player choice.
  */
 for (let button of buttons) {
-    button.addEventListener('click', function () {
-        let playerChoice = this.getAttribute('data-type');
+    button.addEventListener("click", function () {
+        let playerChoice = this.getAttribute("data-type");
         runGame(playerChoice);
     })
 }
@@ -40,9 +40,9 @@ function runGame(playerChoice) {
  * To check who won the game and use the increment score function.
  */
 function updateScores(result) {
-    if (result === 'user') {
+    if (result === "user") {
         incrementUserScore();
-    } else if (result === 'computer') {
+    } else if (result === "computer") {
         incrementComputerScore();
     }
 }
@@ -52,49 +52,49 @@ function updateScores(result) {
  * outcomes listed individually.
  */
 function checkWinner(playerChoice, computerChoice) {
-    if (playerChoice === 'resurrection stone' && computerChoice === 'elder wand') {
-        result.innerHTML = 'WOW, you beat the Dark Lord';
-        return 'user'
-    } else if (playerChoice === 'elder wand' && computerChoice === 'resurrection stone') {
-        result.innerHTML = 'The Dark Lord has outsmarted you this time, try again!'
-        return 'computer'
-    } else if (playerChoice === 'resurrection stone' && computerChoice === 'invisibility cloak') {
-        result.innerHTML = 'The Dark Lord is wise! Try harder next time!'
-        return 'computer'
-    } else if (playerChoice === 'invisibility cloak' && computerChoice === 'resurrection stone') {
-        result.innerHTML = "That's totally barbaric! Well done, You win."
-        return 'user'
-    } else if (playerChoice === 'elder wand' && computerChoice === 'invisibility cloak') {
-        result.innerHTML = "Now that's how you swish and flick! Great work, you win!"
-        return 'user'
-    } else if (playerChoice === 'invisibility cloak' && computerChoice === 'elder wand') {
-        result.innerHTML = "The Dark Lord rises again! Try again"
+    if (playerChoice === "resurrection stone" && computerChoice === "elder wand") {
+        result.innerHTML = "WOW, you beat the Dark Lord";
+        return "user"
+    } else if (playerChoice === "elder wand" && computerChoice === "resurrection stone") {
+        result.innerHTML = "The Dark Lord has outsmarted you this time, try again!";
+        return "computer"
+    } else if (playerChoice === "resurrection stone" && computerChoice === "invisibility cloak") {
+        result.innerHTML = "The Dark Lord is wise! Try harder next time!";
+        return "computer"
+    } else if (playerChoice === "invisibility cloak" && computerChoice === "resurrection stone") {
+        result.innerHTML = "That's totally barbaric! Well done, You win.";
+        return "user"
+    } else if (playerChoice === "elder wand" && computerChoice === "invisibility cloak") {
+        result.innerHTML = "Now that's how you swish and flick! Great work, you win!";
+        return "user"
+    } else if (playerChoice === "invisibility cloak" && computerChoice === "elder wand") {
+        result.innerHTML = "The Dark Lord rises again! Try again";
         return 'computer'
     } else (playerChoice === computerChoice)
-    result.innerHTML = "I guess a Draw is ok..... FOR A MUGGLE! Let's beat the Dark lord"
+    result.innerHTML = "I guess a Draw is ok..... FOR A MUGGLE! Let's beat the Dark lord";
 }
 
 /**
  * Gets the score for the user and increments by 1 when the user wins.
  */
 function incrementUserScore() {
-    let previousScore = parseInt(document.getElementById('player-score').innerText);
-    document.getElementById('player-score').innerText = ++previousScore;
+    let previousScore = parseInt(document.getElementById("player-score").innerText);
+    document.getElementById("player-score").innerText = ++previousScore;
 }
 
 /**
  * Gets the score for the computer and increments by 1 when the computer wins.
  */
 function incrementComputerScore() {
-    let previousScore = parseInt(document.getElementById('computer-score').innerText);
-    document.getElementById('computer-score').innerText = ++previousScore;
+    let previousScore = parseInt(document.getElementById("computer-score").innerText);
+    document.getElementById("computer-score").innerText = ++previousScore;
 }
 
 /**
  * For modal use, when the game rules button is clicked 
  * the display of the modal is then visable.
  */
-btn.onclick = function() {
+gameRuleBtn.onclick = function() {
   modal.style.display = "block";
 }
 
@@ -102,7 +102,7 @@ btn.onclick = function() {
  * For modal use, when the X button is clicked 
  * the display of the modal is then closed and display goes back to none.
  */
-span.onclick = function() {
+closeBtn.onclick = function() {
   modal.style.display = "none";
 }
 
@@ -120,7 +120,7 @@ window.onclick = function(event) {
  * For page load modal to be displayed when the site is loaded
  */
 window.onload = function() {
-    document.getElementById('play-game-modal-btn').onclick = function () {
-        document.getElementById('page-load-modal').style.display = "none"
+    document.getElementById("play-game-modal-btn").onclick = function () {
+        document.getElementById("page-load-modal").style.display = "none"
     }
 }

@@ -124,3 +124,17 @@ window.onload = function() {
         document.getElementById("page-load-modal").style.display = "none"
     }
 }
+
+function show() {
+    document.getElementById("modal-images").style.display = "block"
+    document.getElementById("modal-choices").style.display = "none"
+}
+function show() {
+    document.getElementById("modal-images").style.display = "block"
+    document.getElementById("modal-choices").style.display = "none"
+}
+
+function show() {
+    document.getElementById("modal-images").style.display = "block"
+    document.getElementById("modal-choices").style.display = "none"
+}

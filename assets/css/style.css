@@ -36,10 +36,6 @@ html {
     cursor: pointer;
 }
 
-.can-you-win {
-    font-size: 20px;
-}
-
 /* Game buttons */
 
 .selected {
@@ -145,6 +141,8 @@ footer {
     }
 }
 
+/* Style selection buttons for screens below 550px */
+
 @media screen and (max-width: 550px) {
     .selected {
         display: flex;
@@ -154,44 +152,28 @@ footer {
         margin: 0 auto;
         width: 50%;
     }
-
-    .can-you-win {
-        font-size: 15px;
-    }
 }
+
+/* Add style to game rules modal for text size below 700px */
 
 @media screen and (max-width: 700px) {
     .modal-rules-body p {
         font-size: 10px;
     }
 }
-
-@media screen and (max-width: 1100px) {
-    .page-load-content p {
-        font-size: 1rem;
-    }
-
-    .page-load-header h2 {
-        font-size: 2rem;
-    }
-
-    #play-game-modal-btn {
-        width: 10%;
-        font-size: 1rem;
-    }
-}
-
+ /* Modal background with opacity for better focus */
+ 
 .modal-rules {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 150px; /* Location of the box */
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 150px; 
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4);
   }
   
   /* Modal Content */
@@ -263,9 +245,10 @@ footer {
     position: relative;
     background-color: #8505a8;
     color: azure;
-    width: 75%;
+    width: 50%;
     height: fit-content;
     margin: 0 auto;
+    font-size: 15px;
   }
 /* Play game button in page load modal */
   #play-game-modal-btn {
@@ -291,3 +274,18 @@ footer {
     margin: 30px 10px;
     width: 90%;
   }
+
+  #modal-images {
+    display: none;
+    padding: 20px;
+    margin-right: 10px;
+  }
+
+  #modal-images img {
+    width: 10%;
+    height: 10%;
+  }
+
+  
+
+  

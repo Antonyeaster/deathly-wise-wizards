@@ -44,7 +44,7 @@ html {
 
 .selected {
     height: 60px;
-    width: 30%;
+    width: 32%;
     background-color: #8505a8;
     color: azure;
     border-radius: 10px;
@@ -264,30 +264,30 @@ footer {
     background-color: #8505a8;
     color: azure;
     width: 75%;
-    height: 75%;
+    height: fit-content;
     margin: 0 auto;
   }
 /* Play game button in page load modal */
   #play-game-modal-btn {
-    width: 30%;
+    width: 100px;
     background-color: #000;
     color: #8505a8;
-    font-size: 1.5rem;
+    font-size: 15px;
     font-weight: bolder;
-    padding: 20px;
+    padding: 10px;
     border-radius: 10px;
-    margin: 0 auto
+    margin: 5px auto;
 }
   
   /* page load modal header */
 
   .page-load-header {
-    font-size: 3rem;
+    font-size: 20px;
   }
 
   /* information about the game in page load modal */
 
   .page-load-body {
-    font-size: 1.5rem;
-    margin: 40px 10px;
+    margin: 30px 10px;
+    width: 90%;
   }

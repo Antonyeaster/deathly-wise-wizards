@@ -161,74 +161,75 @@ footer {
         font-size: 10px;
     }
 }
- /* Modal background with opacity for better focus */
- 
+
+/* Modal background with opacity for better focus */
+
 .modal-rules {
-    display: none; 
-    position: fixed; 
-    z-index: 1; 
-    padding-top: 60px; 
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 60px;
     left: 0;
     top: 0;
-    width: 100%; 
-    height: 100%; 
-    overflow: auto; 
-    background-color: rgba(0,0,0,0.4);
-  }
-  
-  /* Modal Content */
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
 
-  .modal-rules-content {
+/* Modal Content */
+
+.modal-rules-content {
     position: relative;
     background-color: #8505a8;
     color: azure;
     margin: auto;
     padding: 0;
     border: 1px solid #888;
-    width: 40%;
-  }
+    width: 50%;
+}
 
-  .modal-rules-body {
-    font-size: 1.5rem;
+.modal-rules-body {
+    font-size: 1.2rem;
     margin: 2rem;
-  }
+}
 
-  /* Game rules button */
+/* Game rules button */
 
-  #myRulesBtn {
+#my-rules-btn {
     background-color: #8505a8;
     width: 30%;
     margin: 1rem;
     padding: 10px;
     border-radius: 10px;
     color: azure;
-  } 
-  
-  /* Close button */
+}
 
-  .close {
+/* Close button */
+
+.close {
     color: white;
     float: right;
     font-size: 28px;
     font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
+}
+
+.close:hover,
+.close:focus {
     color: #8505a8;
     text-decoration: none;
     cursor: pointer;
-  }
-  
-  .modal-header {
-    padding: 2px 16px;
+}
+
+.modal-header {
+    padding: 2px 14px;
     background-color: #000;
     color: white;
-  }
-  
-  /* Page load modal */
+}
 
-  #page-load-modal {
+/* Page load modal */
+
+#page-load-modal {
     position: fixed;
     z-index: 2;
     padding-top: 25px;
@@ -237,11 +238,12 @@ footer {
     overflow: auto;
     top: 0;
     left: 0;
-    background-color: rgba(0,0,0,0.4);
-  }
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
 /* page load content in page load modal */
 
-  .page-load-content {
+.page-load-content {
     position: relative;
     background-color: #8505a8;
     color: azure;
@@ -249,10 +251,19 @@ footer {
     height: fit-content;
     margin: 0 auto;
     font-size: 15px;
-  }
+}
+
+/* descriptive word describing what beats what */
+
+.versus {
+    color: #000;
+    text-transform: uppercase;
+}
+
 /* Play game button in page load modal */
-  #play-game-modal-btn {
-    width: 100px;
+
+#play-game-modal-btn {
+    width: 40%;
     background-color: #000;
     color: #8505a8;
     font-size: 15px;
@@ -260,49 +271,60 @@ footer {
     padding: 10px;
     border-radius: 10px;
     margin: 5px auto;
+    cursor: pointer;
 }
-  
-  /* page load modal header */
 
-  .page-load-header {
-    font-size: 20px;
-  }
+/* page load modal header */
 
-  /* information about the game in page load modal */
+.page-load-header {
+    font-size: 15px;
+    padding: 5px 10px;
+    background-color: #000;
+    color: white;
+}
 
-  .page-load-body {
+/* information about the game in page load modal */
+
+.page-load-body {
     margin: 30px 10px;
     width: 90%;
-  }
+}
 
-  #modal-images {
+/* Images inside the choices button */
+
+#modal-images {
     display: none;
     margin-top: 10px;
-  }
+}
 
-  #modal-images img {
-    width: 20%;
-    height: 20%;
+#modal-images img {
+    width: 15%;
+    height: 15%;
     display: block;
     margin: 0 auto;
     padding: 2px;
-  }
+    cursor: pointer;
+}
 
-  #modal-choices-btn {
-    width: 70%;
+/* Choices button */
+
+#modal-choices-btn {
+    width: 70px;
     background-color: #000;
     color: #8505a8;
     padding: 5px;
     border-radius: 10px;
-  }
+    cursor: pointer;
+}
 
-  #stone-hover, #wand-hover, #cloak-hover {
+/* Hover effect with description of image */
+#stone-hover,
+#wand-hover,
+#cloak-hover {
     display: none;
     font-size: 50%;
-  }
+}
 
-
-  
-  
-
-  
+.hover-instructions {
+    font-size: 15px;
+}

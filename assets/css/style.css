@@ -167,7 +167,7 @@ footer {
     display: none; 
     position: fixed; 
     z-index: 1; 
-    padding-top: 150px; 
+    padding-top: 60px; 
     left: 0;
     top: 0;
     width: 100%; 
@@ -281,9 +281,11 @@ footer {
   }
 
   #modal-images img {
-    width: 80px;
-    height: 80px;
+    width: 20%;
+    height: 20%;
+    display: block;
     margin: 0 auto;
+    padding: 2px;
   }
 
   #modal-choices-btn {

@@ -281,10 +281,24 @@ footer {
   }
 
   #modal-images img {
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
     margin: 0 auto;
   }
+
+  #modal-choices-btn {
+    width: 70%;
+    background-color: #000;
+    color: #8505a8;
+    padding: 5px;
+    border-radius: 10px;
+  }
+
+  #stone-hover, #wand-hover, #cloak-hover {
+    display: none;
+    font-size: 50%;
+  }
+
 
   
   

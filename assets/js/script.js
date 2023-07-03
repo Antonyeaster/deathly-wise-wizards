@@ -6,6 +6,9 @@ let buttons = document.getElementsByClassName("selected");
 let modal = document.getElementById("myRulesModal");
 let gameRuleBtn = document.getElementById("myRulesBtn");
 let closeBtn = document.getElementsByClassName("close")[0];
+let stone = document.getElementById("resurrection-stone-hover");
+let wand = document.getElementById("elder-wand-hover");
+let cloak = document.getElementById("invisibility-cloak-hover");
 
 /**
  * To add event listener to game choice buttons 
@@ -130,6 +133,41 @@ window.onload = function() {
  */
 function show() {
     document.getElementById("modal-images").style.display = "block"
-    document.getElementById("modal-choices").style.display = "none"
+    document.getElementById("modal-choices-btn").style.display = "none"
 }
 
+/**
+ * Add hover / tap over image for Invisibility Cloak telling the user
+ * what they are in the game rules modal
+ */
+stone.onmouseover = function() {
+    document.getElementById("stone-hover").style.display = "block"
+}
+
+stone.onmouseout = function() {
+    document.getElementById("stone-hover").style.display = "none"
+}
+
+/**
+ * Add hover / tap over image for Elder Wand telling the user
+ * what they are in the game rules modal
+ */
+wand.onmouseover = function() {
+    document.getElementById("wand-hover").style.display = "block"
+}
+
+wand.onmouseout = function() {
+    document.getElementById("wand-hover").style.display = "none"
+}
+
+/**
+ * Add hover / tap over image for Invisibility Cloak telling the user
+ * what they are in the game rules modal
+ */
+cloak.onmouseover = function() {
+    document.getElementById("cloak-hover").style.display = "block"
+}
+
+cloak.onmouseout = function() {
+    document.getElementById("cloak-hover").style.display = "none"
+}

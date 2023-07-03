@@ -277,15 +277,16 @@ footer {
 
   #modal-images {
     display: none;
-    padding: 20px;
-    margin-right: 10px;
+    margin-top: 10px;
   }
 
   #modal-images img {
-    width: 10%;
-    height: 10%;
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
   }
 
+  
   
 
   

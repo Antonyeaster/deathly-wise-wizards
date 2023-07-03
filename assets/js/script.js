@@ -125,16 +125,11 @@ window.onload = function() {
     }
 }
 
-function show() {
-    document.getElementById("modal-images").style.display = "block"
-    document.getElementById("modal-choices").style.display = "none"
-}
+/**
+ * for images inside game rules modal, will display when choices button is clicked.
+ */
 function show() {
     document.getElementById("modal-images").style.display = "block"
     document.getElementById("modal-choices").style.display = "none"
 }
 
-function show() {
-    document.getElementById("modal-images").style.display = "block"
-    document.getElementById("modal-choices").style.display = "none"
-}

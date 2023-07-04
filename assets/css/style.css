@@ -24,10 +24,12 @@ html {
 .heading {
     text-align: center;
     font-size: 50px;
+    margin: 1rem 0;
 }
 
 .sub-heading {
     font-size: 30px;
+    margin: 1rem 0;
 }
 
 /* Game area section with main game buttons */
@@ -36,6 +38,10 @@ html {
     display: inline-block;
     align-items: center;
     width: 90%;
+}
+
+#button-choice {
+    margin: 1rem 0;
 }
 
 .selected {
@@ -102,6 +108,10 @@ html {
 
 /* game result text */
 
+#outcome-sentence {
+    margin: 1rem 0;
+}
+
 #decision {
     width: 75%;
     font-size: 30px;
@@ -110,7 +120,7 @@ html {
 
 /* Game rules in footer */
 
-footer {
+.social-links {
     position: absolute;
     width: 75%;
     height: 100px;
@@ -194,15 +204,15 @@ https://www.w3schools.com/howto/howto_css_modals.asp */
 /* Page load modal */
 
 #page-load-modal {
-    position: fixed;
+    position: absolute;
     z-index: 2;
-    padding-top: 25px;
+    padding-top: 50px;
     width: 100%;
     height: 100%;
     overflow: auto;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* page load content in page load modal */
@@ -318,7 +328,7 @@ https://www.w3schools.com/howto/howto_css_modals.asp */
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
-        margin: 0 auto;
+        margin: 3px auto;
         width: 50%;
     }
 }

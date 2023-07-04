@@ -30,13 +30,13 @@ html {
     font-size: 30px;
 }
 
-#info {
-    font-size: 24px;
-    color: #8505a8;
-    cursor: pointer;
-}
+/* Game area section with main game buttons */
 
-/* Game buttons */
+.game-area {
+    display: inline-block;
+    align-items: center;
+    width: 90%;
+}
 
 .selected {
     height: 60px;
@@ -49,14 +49,7 @@ html {
     cursor: pointer;
 }
 
-/* Game area */
-
-.game-area {
-    display: inline-block;
-    align-items: center;
-}
-
-/* result area */
+/* Result area with both computer and user images inside */
 
 .result-area {
     display: flex;
@@ -64,7 +57,7 @@ html {
     max-width: 800px;
 }
 
-/* images inside results area */
+/* Images inside results area */
 
 #user-side-image {
     width: 100%;
@@ -73,7 +66,6 @@ html {
     float: left;
     border: 3px solid #8505a8;
     background-size: cover;
-
 }
 
 #computer-side-image {
@@ -97,6 +89,8 @@ html {
     object-fit: cover;
     width: 100%;
 }
+
+/* Scores displayed at the top of game images */
 
 .scores {
     position: absolute;
@@ -129,38 +123,8 @@ footer {
     color: #8505a8;
 }
 
-/* Adjust text size for screen size 500px and below */
-
-@media screen and (max-width: 500px) {
-    .scores {
-        font-size: 13px;
-    }
-
-    #decision {
-        font-size: 20px;
-    }
-}
-
-/* Style selection buttons for screens below 550px */
-
-@media screen and (max-width: 550px) {
-    .selected {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        margin: 0 auto;
-        width: 50%;
-    }
-}
-
-/* Add style to game rules modal for text size below 700px */
-
-@media screen and (max-width: 700px) {
-    .modal-rules-body p {
-        font-size: 10px;
-    }
-}
+/* Used W3C for inspiration and help on how to make a modal 
+https://www.w3schools.com/howto/howto_css_modals.asp */
 
 /* Modal background with opacity for better focus */
 
@@ -319,6 +283,7 @@ footer {
 }
 
 /* Hover effect with description of image */
+
 #stone-hover,
 #wand-hover,
 #cloak-hover {
@@ -328,4 +293,40 @@ footer {
 
 .hover-instructions {
     font-size: 15px;
+    font-weight: bolder;
+}
+
+/*   Media Querys   */
+
+/* Adjust text size for screen size 500px and below */
+
+@media screen and (max-width: 500px) {
+    .scores {
+        font-size: 13px;
+    }
+
+    #decision {
+        font-size: 20px;
+    }
+}
+
+/* Style selection buttons for screens below 700px */
+
+@media screen and (max-width: 700px) {
+    .selected {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 0 auto;
+        width: 50%;
+    }
+}
+
+/* Add style to game rules modal for text size below 700px */
+
+@media screen and (max-width: 700px) {
+    .modal-rules-body p {
+        font-size: 10px;
+    }
 }

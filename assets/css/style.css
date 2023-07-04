@@ -298,8 +298,8 @@ footer {
 }
 
 #modal-images img {
-    width: 15%;
-    height: 15%;
+    width: 80px;
+    height: 80px;
     display: block;
     margin: 0 auto;
     padding: 2px;
@@ -309,12 +309,13 @@ footer {
 /* Choices button */
 
 #modal-choices-btn {
-    width: 70px;
+    width: 90px;
     background-color: #000;
     color: #8505a8;
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
+    font-weight: bolder;
 }
 
 /* Hover effect with description of image */
@@ -322,7 +323,7 @@ footer {
 #wand-hover,
 #cloak-hover {
     display: none;
-    font-size: 50%;
+    font-size: 70%;
 }
 
 .hover-instructions {

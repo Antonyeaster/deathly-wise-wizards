@@ -13,6 +13,7 @@
 </head>
 
 <body>
+    
     <!-- Main heading -->
     <h1 class="heading">Deathly Wise Wizards <i class="fa-solid fa-hat-wizard" style="color: #8505a8;"></i></h1>
 
@@ -21,6 +22,8 @@
 
         <button id="my-rules-btn">Game Rules</button>
 
+        <!-- Used W3C for inspiration and help on how to make a modal 
+        https://www.w3schools.com/howto/howto_css_modals.asp -->
         <!-- The Modal -->
         <div id="my-rules-modal" class="modal-rules">
 
@@ -31,11 +34,11 @@
                         <span class="close">&times;</span>
                         <h2>Rules</h2>
                     </div>
+
                     <div class="modal-rules-body">
                         <p>Elder Wand <span class="versus">Destroys</span> Invisibility Cloak<br><br>Invisibility Cloak
                             <span class="versus">Outsmarts</span> Resurrection
                             Stone<br><br>Resurrection Stone <span class="versus">Eliminates</span> Elder Wand
-                            <br>
                         </p>
                         <div id="modal-images">
                             <p class="hover-instructions">Hover/Tap over the images to see what the weapons are.</p>
@@ -56,36 +59,36 @@
             </div>
         </div>
 
-
-
-
-
         <!--Button choice -->
         <div id="button-choice">
             <button aria-label="Resurrection Stone" class="selected" data-type="0">Resurrection Stone</button>
             <button aria-label="Elder Wand" class="selected" data-type="1">Elder Wand</button>
             <button aria-label="Invisibility Cloak" class="selected" data-type="2">Invisibility Cloak</button>
         </div>
+
         <div id="outcome-sentence">
             <span id="decision">Ready To Duel?</span>
         </div>
     </section>
+    <!-- Game area with scores and images for choice selected -->
     <div class="result-area">
-        <!-- Game area with scores and inmages for choice selected -->
+
+        <!-- Left side image -->
         <div id="user-side-image">
             <h3 class="scores">Player Score: <span id="player-score">0</span></h3>
             <img id="user-image" class="run-game-image" src="assets/images/deathly-hallows-black.webp"
                 alt="Deathly hallows symbol, which changes apon click to either a wand, cloak or stone">
-
         </div>
+
+        <!-- Right side image -->
         <div id="computer-side-image">
             <h3 class="scores">Dark Lord Score: <span id="computer-score">0</span></h3>
             <img id="computer-image" class="run-game-image" src="assets/images/deathly-hallows-black.webp"
                 alt="Deathly hallows symbol, which changes apon click to either a wand, cloak or stone">
         </div>
     </div>
-    <!-- Page load modal -->
 
+    <!-- Page load modal -->
     <div id="page-load-modal">
         <div id="modal-border">
             <div class="page-load-content">
@@ -96,9 +99,8 @@
                     game rules when you enter the game to find out how your chosen weapon could beat the Dark Lords.
                 </p>
 
-                <p class="page-load-body">Do you have what it takes to beat the Dark Lord?
+                <p class="page-load-body">Do you have what it takes to beat the Dark Lord?</p>
 
-                </p>
                 <p class="page-load-body">This really could be the
                     time we finally bring down the Dark Lord once and for all. So, grab your drinks, grab your snacks,
                     hit
@@ -113,12 +115,11 @@
     <!-- Game rules in the footer -->
     <footer>
         <ul>
-            <li class="social-icons"><a href="https://github.com/Antonyeaster" target="_blank" rel="noopener"><i class="fa-brands fa-github"
-                        style="color: #8505a8;"></i></a></li>
-            <li class="social-icons"><a href="https://www.linkedin.com/in/antony-easter-9631b026a/" target="_blank" rel="noopener"><i
-                        class="fa-brands fa-linkedin" style="color: #8505a8;"></i></a></li>
+            <li class="social-icons"><a href="https://github.com/Antonyeaster" target="_blank" rel="noopener"><i
+                        class="fa-brands fa-github" style="color: #8505a8;"></i></a></li>
+            <li class="social-icons"><a href="https://www.linkedin.com/in/antony-easter-9631b026a/" target="_blank"
+                    rel="noopener"><i class="fa-brands fa-linkedin" style="color: #8505a8;"></i></a></li>
         </ul>
-
     </footer>
 
     <!-- JavaScript link and Font Awesome -->

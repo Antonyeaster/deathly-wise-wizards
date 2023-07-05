@@ -219,21 +219,17 @@ https://www.w3schools.com/howto/howto_css_modals.asp */
     color: azure;
     width: 100%;
     height: fit-content;
-    margin: 0 auto;
     font-size: 20px;
 }
 
 #modal-border {
-    position: absolute;
-    background-color: #ffd700;
+    position: relative;
+    background-color: #15fd38;
     color: azure;
-    width: 53%;
+    width: 50%;
     height: fit-content;
-    font-size: 15px;
     padding: 10px;
-    top: 10%;
     margin: 0 auto;
-    left: 25%;
     border-radius: 10px; 
 }
 
@@ -271,7 +267,7 @@ https://www.w3schools.com/howto/howto_css_modals.asp */
 
 .page-load-body {
     margin: 30px 10px;
-    width: 90%;
+    width: auto;
 }
 
 /* Images inside the choices button */
@@ -328,6 +324,10 @@ https://www.w3schools.com/howto/howto_css_modals.asp */
     #decision {
         font-size: 20px;
     }
+
+    .page-load-content {
+        font-size: 15px;
+    }
 }
 
 /* Style selection buttons for screens below 700px */
@@ -341,12 +341,12 @@ https://www.w3schools.com/howto/howto_css_modals.asp */
         margin: 3px auto;
         width: 50%;
     }
-}
 
-/* Add style to game rules modal for text size below 700px */
-
-@media screen and (max-width: 700px) {
     .modal-rules-body p {
         font-size: 10px;
     }
+
+
 }
+
+/* Add style to game rules modal for text size below 700px */

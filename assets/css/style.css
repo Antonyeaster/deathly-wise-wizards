@@ -45,7 +45,7 @@ html {
 
 .selected {
     font-family: inherit;
-    font-size: 0.8rem;
+    font-size: 1rem;
     height: 60px;
     width: 32%;
     background-color: #8505a8;

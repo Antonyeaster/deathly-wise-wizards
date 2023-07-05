@@ -28,7 +28,7 @@ html {
 }
 
 .sub-heading {
-    font-size: 30px;
+    font-size: 2rem;
     margin: 1rem 0;
 }
 
@@ -293,8 +293,9 @@ https://www.w3schools.com/howto/howto_css_modals.asp */
 }
 
 .hover-instructions {
-    font-size: 15px;
+    font-size: 1.5rem;
     font-weight: bolder;
+    margin: 1rem auto;
 }
 
 /*   Media Querys   */
@@ -314,8 +315,8 @@ https://www.w3schools.com/howto/howto_css_modals.asp */
     }
 }
 
-/* Style selection buttons for screens below 700px */
-@media screen and (max-width: 700px) {
+/* Style selection buttons for screens below 750px */
+@media screen and (max-width: 750px) {
     .selected {
         display: flex;
         flex-direction: column;
@@ -327,5 +328,13 @@ https://www.w3schools.com/howto/howto_css_modals.asp */
 
     .modal-rules-body p {
         font-size: 10px;
+    }
+
+    .heading {
+        font-size: 2rem;
+    }
+
+    .sub-heading {
+        font-size: 1.5rem;
     }
 }

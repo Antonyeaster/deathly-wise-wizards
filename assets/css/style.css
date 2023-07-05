@@ -153,15 +153,22 @@ https://www.w3schools.com/howto/howto_css_modals.asp */
     position: relative;
     background-color: #8505a8;
     color: azure;
-    margin: auto;
-    padding: 0;
-    border: 1px solid #888;
+    margin: 0 auto;
+    width: 100%;
+}
+
+#rules-modal-border {
+    position: relative;
+    background-color: #15fd38;
     width: 50%;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 10px;
 }
 
 .modal-rules-body {
     font-size: 1.2rem;
-    margin: 2rem;
+    padding: 1.5rem;
 }
 
 /* Game rules button */
@@ -236,7 +243,7 @@ https://www.w3schools.com/howto/howto_css_modals.asp */
 /* descriptive word describing what beats what */
 
 .versus {
-    color: #000;
+    color: #15fd38;
     text-transform: uppercase;
 }
 
@@ -245,7 +252,7 @@ https://www.w3schools.com/howto/howto_css_modals.asp */
 #play-game-modal-btn {
     width: 40%;
     background-color: #000;
-    color: #8505a8;
+    color: azure;
     font-size: 15px;
     font-weight: bolder;
     padding: 10px;
@@ -291,7 +298,7 @@ https://www.w3schools.com/howto/howto_css_modals.asp */
 #modal-choices-btn {
     width: 90px;
     background-color: #000;
-    color: #8505a8;
+    color: azure;
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;

@@ -282,6 +282,7 @@ https://www.w3schools.com/howto/howto_css_modals.asp */
     border-radius: 10px;
     cursor: pointer;
     font-weight: bolder;
+    margin: 1rem auto;
 }
 
 /* Hover effect with description of image */

@@ -167,7 +167,7 @@ https://www.w3schools.com/howto/howto_css_modals.asp */
     font-family: inherit;
     font-size: 1rem;
     background-color: #8505a8;
-    width: 32%;
+    width: 35%;
     margin: 1rem;
     padding: 10px;
     border-radius: 10px;
@@ -176,15 +176,15 @@ https://www.w3schools.com/howto/howto_css_modals.asp */
 
 /* Close button */
 .close {
-    color: white;
+    color: azure;
     float: right;
-    font-size: 28px;
-    font-weight: bold;
+    font-size: 25px;
+    font-weight: bolder;
 }
 
 .close:hover,
 .close:focus {
-    color: #8505a8;
+    color: #15fd38;
     text-decoration: none;
     cursor: pointer;
 }
@@ -237,6 +237,8 @@ https://www.w3schools.com/howto/howto_css_modals.asp */
 
 /* Play game button in page load modal */
 #play-game-modal-btn {
+    font-family: inherit;
+    font-size: 1rem;
     width: 40%;
     background-color: #000;
     color: azure;
@@ -279,7 +281,9 @@ https://www.w3schools.com/howto/howto_css_modals.asp */
 
 /* Choices button */
 #modal-choices-btn {
-    width: 90px;
+    font-family: inherit;
+    font-size: 1rem;
+    width: 32%;
     background-color: #000;
     color: azure;
     padding: 5px;
@@ -299,8 +303,8 @@ https://www.w3schools.com/howto/howto_css_modals.asp */
 
 .hover-instructions {
     font-size: 1.5rem;
-    font-weight: bolder;
     margin: 1rem auto;
+    color: #15fd38;
 }
 
 /*   Media Querys   */

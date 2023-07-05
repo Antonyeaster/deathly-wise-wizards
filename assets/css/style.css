@@ -44,6 +44,8 @@ html {
 }
 
 .selected {
+    font-family: inherit;
+    font-size: 0.8rem;
     height: 60px;
     width: 32%;
     background-color: #8505a8;
@@ -162,8 +164,10 @@ https://www.w3schools.com/howto/howto_css_modals.asp */
 
 /* Game rules button */
 #my-rules-btn {
+    font-family: inherit;
+    font-size: 1rem;
     background-color: #8505a8;
-    width: 30%;
+    width: 32%;
     margin: 1rem;
     padding: 10px;
     border-radius: 10px;

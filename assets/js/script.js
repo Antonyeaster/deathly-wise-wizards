@@ -11,6 +11,7 @@ let wand = document.getElementById("elder-wand-hover");
 let cloak = document.getElementById("invisibility-cloak-hover");
 let choicesBtn = document.getElementById("modal-choices-btn");
 let modalImage = document.getElementById("modal-images");
+
 /**
  * To add event listener to game choice buttons 
  * and run player choice.
@@ -19,7 +20,7 @@ for (let button of buttons) {
     button.addEventListener("click", function () {
         let playerChoice = this.getAttribute("data-type");
         runGame(playerChoice);
-    })
+    });
 }
 
 /**
@@ -29,16 +30,16 @@ for (let button of buttons) {
 function runGame(playerChoice) {
     playerImage = document.querySelector("#user-image");
     playerImage.src = `assets/images/${choices[playerChoice].replaceAll(' ', '-')}.webp`;
-    playerImage.alt = choices[playerChoice]
+    playerImage.alt = choices[playerChoice];
 
-    let computerChoice = Math.floor(Math.random() * 3)
+    let computerChoice = Math.floor(Math.random() * 3);
     computerImage = document.querySelector("#computer-image");
     computerImage.src = `assets/images/${choices[computerChoice].replaceAll(' ', '-')}.webp`;
     computerChoice.alt = choices[computerChoice];
 
     let result = checkWinner(choices[playerChoice], choices[computerChoice]);
 
-    updateScores(result)
+    updateScores(result);
 }
 /**
  * To check who won the game and use the increment score function.
@@ -101,7 +102,7 @@ function incrementComputerScore() {
 gameRuleBtn.onclick = function () {
     modal.style.display = "block";
     this.setAttribute('aria hidden', true);
-}
+};
 
 /**
  * For modal use, when the X button is clicked 
@@ -110,7 +111,7 @@ gameRuleBtn.onclick = function () {
 closeBtn.onclick = function () {
     modal.style.display = "none";
     this.removeAttribute('aria hidden', false);
-}
+};
 
 /**
  * To allow the user to click anywhere outside the modal to close
@@ -120,7 +121,7 @@ window.onclick = function (event) {
     if (event.target == modal) {
         modal.style.display = "none";
     }
-}
+};
 
 /**
  * For page load modal to be displayed when the site is loaded
@@ -128,16 +129,16 @@ window.onclick = function (event) {
 window.onload = function () {
     document.getElementById("play-game-modal-btn").onclick = function () {
     document.getElementById("page-load-modal").style.display = "none";
-    }
-}
+    };
+};
 
 /**
  * for images inside game rules modal, will display when choices button is clicked.
  */
 choicesBtn.onclick = function() {
-    modalImage.style.display = "block"
-    choicesBtn.style.display = "none"
-}
+    modalImage.style.display = "block";
+    choicesBtn.style.display = "none";
+};
 
 /**
  * Add hover / tap over image for Invisibility Cloak telling the user

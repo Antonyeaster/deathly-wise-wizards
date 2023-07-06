@@ -57,23 +57,23 @@ function updateScores(result) {
 function checkWinner(playerChoice, computerChoice) {
     if (playerChoice === "resurrection stone" && computerChoice === "elder wand") {
         result.innerHTML = "WOW, you beat the Dark Lord";
-        return "user"
+        return "user";
     } else if (playerChoice === "elder wand" && computerChoice === "resurrection stone") {
         result.innerHTML = "The Dark Lord has outsmarted you this time, try again!";
-        return "computer"
+        return "computer";
     } else if (playerChoice === "resurrection stone" && computerChoice === "invisibility cloak") {
         result.innerHTML = "The Dark Lord is wise! Try harder next time!";
-        return "computer"
+        return "computer";
     } else if (playerChoice === "invisibility cloak" && computerChoice === "resurrection stone") {
         result.innerHTML = "That's totally barbaric! Well done, You win.";
-        return "user"
+        return "user";
     } else if (playerChoice === "elder wand" && computerChoice === "invisibility cloak") {
         result.innerHTML = "Now that's how you swish and flick! Great work, you win!";
-        return "user"
+        return "user";
     } else if (playerChoice === "invisibility cloak" && computerChoice === "elder wand") {
         result.innerHTML = "The Dark Lord rises again! Try again";
-        return 'computer'
-    } else (playerChoice === computerChoice)
+        return "computer";
+    } else if (playerChoice === computerChoice)
     result.innerHTML = "I guess a Draw is ok..... FOR A MUGGLE! Let's beat the Dark lord";
 }
 
@@ -126,7 +126,7 @@ window.onclick = function (event) {
  */
 window.onload = function () {
     document.getElementById("play-game-modal-btn").onclick = function () {
-    document.getElementById("page-load-modal").style.display = "none"
+    document.getElementById("page-load-modal").style.display = "none";
     }
 }
 
@@ -134,8 +134,8 @@ window.onload = function () {
  * for images inside game rules modal, will display when choices button is clicked.
  */
 function show() {
-    document.getElementById("modal-images").style.display = "block"
-    document.getElementById("modal-choices-btn").style.display = "none"
+    document.getElementById("modal-images").style.display = "block";
+    document.getElementById("modal-choices-btn").style.display = "none";
 }
 
 /**
@@ -143,33 +143,33 @@ function show() {
  * what they are in the game rules modal
  */
 stone.onmouseover = function () {
-    document.getElementById("stone-hover").style.display = "block"
-}
+    document.getElementById("stone-hover").style.display = "block";
+};
 
 stone.onmouseout = function () {
-    document.getElementById("stone-hover").style.display = "none"
-}
+    document.getElementById("stone-hover").style.display = "none";
+};
 
 /**
  * Add hover / tap over image for Elder Wand telling the user
  * what they are in the game rules modal
  */
 wand.onmouseover = function () {
-    document.getElementById("wand-hover").style.display = "block"
-}
+    document.getElementById("wand-hover").style.display = "block";
+};
 
 wand.onmouseout = function () {
-    document.getElementById("wand-hover").style.display = "none"
-}
+    document.getElementById("wand-hover").style.display = "none";
+};
 
 /**
  * Add hover / tap over image for Invisibility Cloak telling the user
  * what they are in the game rules modal
  */
 cloak.onmouseover = function () {
-    document.getElementById("cloak-hover").style.display = "block"
-}
+    document.getElementById("cloak-hover").style.display = "block";
+};
 
 cloak.onmouseout = function () {
-    document.getElementById("cloak-hover").style.display = "none"
-}
+    document.getElementById("cloak-hover").style.display = "none";
+};

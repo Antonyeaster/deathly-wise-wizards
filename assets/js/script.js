@@ -9,7 +9,8 @@ let closeBtn = document.getElementsByClassName("close")[0];
 let stone = document.getElementById("resurrection-stone-hover");
 let wand = document.getElementById("elder-wand-hover");
 let cloak = document.getElementById("invisibility-cloak-hover");
-
+let choicesBtn = document.getElementById("modal-choices-btn");
+let modalImage = document.getElementById("modal-images");
 /**
  * To add event listener to game choice buttons 
  * and run player choice.
@@ -108,7 +109,7 @@ gameRuleBtn.onclick = function () {
  */
 closeBtn.onclick = function () {
     modal.style.display = "none";
-    this.setAttribute('aria hidden', false);
+    this.removeAttribute('aria hidden', false);
 }
 
 /**
@@ -133,9 +134,9 @@ window.onload = function () {
 /**
  * for images inside game rules modal, will display when choices button is clicked.
  */
-function show() {
-    document.getElementById("modal-images").style.display = "block";
-    document.getElementById("modal-choices-btn").style.display = "none";
+choicesBtn.onclick = function() {
+    modalImage.style.display = "block"
+    choicesBtn.style.display = "none"
 }
 
 /**

@@ -97,34 +97,36 @@ function incrementComputerScore() {
  * For modal use, when the game rules button is clicked 
  * the display of the modal is then visable.
  */
-gameRuleBtn.onclick = function() {
-  modal.style.display = "block";
+gameRuleBtn.onclick = function () {
+    modal.style.display = "block";
+    this.setAttribute('aria hidden', true);
 }
 
 /**
  * For modal use, when the X button is clicked 
  * the display of the modal is then closed and display goes back to none.
  */
-closeBtn.onclick = function() {
-  modal.style.display = "none";
+closeBtn.onclick = function () {
+    modal.style.display = "none";
+    this.setAttribute('aria hidden', false);
 }
 
 /**
  * To allow the user to click anywhere outside the modal to close
  * it and revert the display back to none.
  */
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
+window.onclick = function (event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
 }
 
 /**
  * For page load modal to be displayed when the site is loaded
  */
-window.onload = function() {
+window.onload = function () {
     document.getElementById("play-game-modal-btn").onclick = function () {
-        document.getElementById("page-load-modal").style.display = "none"
+    document.getElementById("page-load-modal").style.display = "none"
     }
 }
 
@@ -140,11 +142,11 @@ function show() {
  * Add hover / tap over image for Invisibility Cloak telling the user
  * what they are in the game rules modal
  */
-stone.onmouseover = function() {
+stone.onmouseover = function () {
     document.getElementById("stone-hover").style.display = "block"
 }
 
-stone.onmouseout = function() {
+stone.onmouseout = function () {
     document.getElementById("stone-hover").style.display = "none"
 }
 
@@ -152,11 +154,11 @@ stone.onmouseout = function() {
  * Add hover / tap over image for Elder Wand telling the user
  * what they are in the game rules modal
  */
-wand.onmouseover = function() {
+wand.onmouseover = function () {
     document.getElementById("wand-hover").style.display = "block"
 }
 
-wand.onmouseout = function() {
+wand.onmouseout = function () {
     document.getElementById("wand-hover").style.display = "none"
 }
 
@@ -164,10 +166,10 @@ wand.onmouseout = function() {
  * Add hover / tap over image for Invisibility Cloak telling the user
  * what they are in the game rules modal
  */
-cloak.onmouseover = function() {
+cloak.onmouseover = function () {
     document.getElementById("cloak-hover").style.display = "block"
 }
 
-cloak.onmouseout = function() {
+cloak.onmouseout = function () {
     document.getElementById("cloak-hover").style.display = "none"
 }

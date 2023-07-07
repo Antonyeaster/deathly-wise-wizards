@@ -349,8 +349,8 @@ I also used Chrome Dev Tools to test the responsiveness of the site down to 325 
 ### Content
 
 * The content of the project was written by myself, Antony Easter
-* Other references within the site are the property of the Harry Potter film Series **(J.K. Rowling and Warner Bros)**
-* The site has been made for educational purposes only
+*  Other references within the site are the property of the Harry Potter film Series **(J.K. Rowling and Warner Bros)**
+*  The site has been made for educational purposes only
 
 ### Media
 
@@ -372,6 +372,6 @@ All images were taken from Google Images and were used for educational purposes:
 I would like to acknowledge the following people and communities for their help with completing my second milestone project:
 
 * The Slack Community
-* My family and friends for taking the time to check the responsiveness on their phones.
+*  My family and friends for taking the time to check the responsiveness on their phones.
 * My mentor, David Bowers, for all the support and encouragement he has supplied.
 * Tutor support at Code Institute for help with 

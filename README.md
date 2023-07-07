@@ -112,7 +112,7 @@ Deathly Wise Wizards is a game very much like rock, paper, scissors. However, th
 
 ### Colour Scheme 
 
-[Colours](/documentation/design/colours.png)
+![Colours](/documentation/design/colours.png)
 
 I used a small amount of solid block colours which I ran through the [Eight Shapes Contrast Grid](https://contrast-grid.eightshapes.com/?version=1.1.0&background-colors=&foreground-colors=%23F0FFFF%0D%0A%23000000%0D%0A%238505A8%0D%0A%2315FD38&es-color-form__tile-size=regular&es-color-form__show-contrast=aaa&es-color-form__show-contrast=aa&es-color-form__show-contrast=aa18&es-color-form__show-contrast=dnp) to make sure the contrast was acceptable and easy to read.
 

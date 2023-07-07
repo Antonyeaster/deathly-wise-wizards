@@ -9,10 +9,6 @@ Like I said though, with a twist. This game was designed with Harry Potter fans 
 The game offers endless amounts of fun and luck that can be enjoyed on a whole range of different-sized devices.
 
 
-
-
-
-
 ![Am I Responsive](/documentation/testing/am-i-responsive.png)
 
 
@@ -81,8 +77,8 @@ Deathly Wise Wizards is a game very much like rock, paper, scissors. However, th
 #### Client Goals
 
 * Have a clear indication of the game rules and what beats what
-* Give people on their own a chance to play a game without needing a second player
-* Link the theme of the site with the way of the wizarding world
+*  Give people on their own a chance to play a game without needing a second player
+*  Link the theme of the site with the way of the wizarding world
 * Give the player and computer scores to allow the user to keep track
 
 ## Site Aims
@@ -102,10 +98,6 @@ Deathly Wise Wizards is a game very much like rock, paper, scissors. However, th
 4. With semantic elements, aria labels and alternate text tags
 5. By keeping the design simple and without too much information on the page
 6. Create a serarate winning, losing, or draw sentence and apply it to each individual outcome
-
-
-
-
 
 
 ## **Design**
@@ -205,7 +197,7 @@ Game Running
 
 ![Game Running](/documentation/design/game-running.png)
 
-* The scores are within the image area for easy viewing
+*  The scores are within the image area for easy viewing
 * The text above the images changes as per the outcome (win, lose, or draw).
 * The scores are incremented by one for a win; there is no score movement for a loss or draw.
 
@@ -220,8 +212,8 @@ They both open within a new tab.
 
 It's vital to make websites as accessible and easy to follow as possible. This has been achieved by:
 
-* Using semantic HTML
-* Using descriptive alt attributes on images
+*  Using semantic HTML
+*  Using descriptive alt attributes on images
 * Using aria labels for links, including naming the footer social media icons
 * Using a colour contrast that is easy to see
 
@@ -271,11 +263,11 @@ Github Pages was used to deploy the live website.
 
 The instructions to achieve this are below:
 
-* Log in to Github
-* Find the repository for this project, Deathly Wise Wizards
-* Click on settings
-* Go to Pages
-* In the Source section, choose main from the drop down select branch menu. Select Root from the drop down select folder menu.
+*  Log in to Github
+*  Find the repository for this project, Deathly Wise Wizards
+*  Click on settings
+*  Go to Pages
+*  In the Source section, choose main from the drop down select branch menu. Select Root from the drop down select folder menu.
 * Click save, and your live Github Pages site will be deployed at the URL shown
 
 You can find the live site by the following URL - [Deathly Wise Wizards](https://antonyeaster.github.io/deathly-wise-wizards/)
@@ -297,9 +289,8 @@ To Fork the PUP HQ repository:
 
 Testing was continuously being done throughout the project. I used Chrome Dev Tools to help identify problems with the styling and the console inside Chrome Dev Tools for JavaScript problems and console logs.
 
-The following issues were raised during my mid-way project mentor meeting:
-
-* The colour contrast was not the easiest to see and should be addressed.
+The following issues were raised during my mid-way project mentor meeting: 
+* The colour contrast was not the easiest to see and should be addressed.
 * The page load modal did not stand out enough, and something should be done to make it easier for the user to stay focused on it.
 * Tidy up the code, remove any double spaces, and fix indentation.
 

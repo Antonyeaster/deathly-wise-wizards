@@ -155,6 +155,7 @@ https://www.w3schools.com/howto/howto_css_modals.asp */
     padding: 10px;
     margin: 0 auto;
     border-radius: 10px;
+    border: 5px solid rgb(4, 90, 156)
 }
 
 .modal-rules-body {
@@ -227,6 +228,7 @@ https://www.w3schools.com/howto/howto_css_modals.asp */
     padding: 10px;
     margin: 0 auto;
     border-radius: 10px;
+    border: 5px solid rgb(4, 90, 156)
 }
 
 /* descriptive word describing what beats what */

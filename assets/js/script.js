@@ -9,6 +9,13 @@ const wand = document.getElementById("elder-wand-hover");
 const cloak = document.getElementById("invisibility-cloak-hover");
 const choicesBtn = document.getElementById("modal-choices-btn");
 const modalImage = document.getElementById("modal-images");
+const playGameBtn = document.getElementById("play-game-modal-btn");
+const pageLoadModal = document.getElementById("page-load-modal");
+const stoneHover = document.getElementById("stone-hover");
+const wandHover = document.getElementById("wand-hover");
+const cloakHover = document.getElementById("cloak-hover");
+const playerPreviousScore = document.getElementById("player-score");
+const computerPreviousScore = document.getElementById("computer-score");
 
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -87,16 +94,17 @@ document.addEventListener("DOMContentLoaded", function () {
      * Gets the score for the user and increments by 1 when the user wins.
      */
     function incrementUserScore() {
-        let previousScore = parseInt(document.getElementById("player-score").innerText);
-        document.getElementById("player-score").innerText = ++previousScore;
+        let previousScore = parseInt(playerPreviousScore.innerText);
+        playerPreviousScore.innerText = ++previousScore;
+    
     }
 
     /**
      * Gets the score for the computer and increments by 1 when the computer wins.
      */
     function incrementComputerScore() {
-        let previousScore = parseInt(document.getElementById("computer-score").innerText);
-        document.getElementById("computer-score").innerText = ++previousScore;
+        let previousScore = parseInt(computerPreviousScore.innerText);
+        computerPreviousScore.innerText = ++previousScore;
     }
 
     /**
@@ -124,7 +132,7 @@ document.addEventListener("DOMContentLoaded", function () {
     window.onclick = function (event) {
         if (event.target == modal) {
             modal.style.display = "none";
-            setAttribute('aria-hidden', true)
+            this.setAttribute('aria-hidden', true);
         }
     };
 
@@ -132,8 +140,9 @@ document.addEventListener("DOMContentLoaded", function () {
      * For page load modal to be displayed when the site is loaded
      */
     window.onload = function () {
-        document.getElementById("play-game-modal-btn").onclick = function () {
-            document.getElementById("page-load-modal").style.display = "none";
+        playGameBtn.onclick = function () {
+            pageLoadModal.style.display = "none";
+            this.setAttribute("aria-hidden", true);
         };
     };
 
@@ -150,11 +159,11 @@ document.addEventListener("DOMContentLoaded", function () {
      * what they are in the game rules modal
      */
     stone.onmouseover = function () {
-        document.getElementById("stone-hover").style.display = "block";
+        stoneHover.style.display = "block";
     };
 
     stone.onmouseout = function () {
-        document.getElementById("stone-hover").style.display = "none";
+        stoneHover.style.display = "none";
     };
 
     /**
@@ -162,11 +171,11 @@ document.addEventListener("DOMContentLoaded", function () {
      * what they are in the game rules modal
      */
     wand.onmouseover = function () {
-        document.getElementById("wand-hover").style.display = "block";
+        wandHover.style.display = "block";
     };
 
     wand.onmouseout = function () {
-        document.getElementById("wand-hover").style.display = "none";
+        wandHover.style.display = "none";
     };
 
     /**
@@ -174,11 +183,11 @@ document.addEventListener("DOMContentLoaded", function () {
      * what they are in the game rules modal
      */
     cloak.onmouseover = function () {
-        document.getElementById("cloak-hover").style.display = "block";
+        cloakHover.style.display = "block";
     };
 
     cloak.onmouseout = function () {
-        document.getElementById("cloak-hover").style.display = "none";
+        cloakHover.style.display = "none";
     };
 
-})
+});

@@ -119,7 +119,11 @@ html {
 .social-icons {
     margin: 1rem;
     display: inline-block;
-    font-size: 30px
+    font-size: 30px; 
+}
+
+.social-icons i {
+    color: #8505a8;
 }
 
 /* Used W3C for inspiration and help on how to make a modal 

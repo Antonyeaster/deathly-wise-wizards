@@ -16,80 +16,46 @@
 
 <body>
 
-    <!-- Main heading -->
-    <h1 class="heading">Deathly Wise Wizards <i class="fa-solid fa-hat-wizard" style="color: #8505a8;"></i></h1>
+    <main id="whole-game-area" aria-hidden="true">
 
-    <section class="game-area">
-        <h2 class="sub-heading">Choose Your Wizardry Weapon</h2>
+        <!-- Main heading -->
+        <h1 class="heading">Deathly Wise Wizards <i class="fa-solid fa-hat-wizard" style="color: #8505a8;"></i></h1>
 
-        <button id="my-rules-btn">Game Rules</button>
+        <section class="game-area">
+            <h2 class="sub-heading">Choose Your Wizardry Weapon</h2>
 
-        <!-- Used W3C for inspiration and help on how to make a modal 
-        https://www.w3schools.com/howto/howto_css_modals.asp -->
+            <button id="my-rules-btn">Game Rules</button>
 
-        <!-- The Modal -->
-        <div id="my-rules-modal" class="modal-rules">
+            <!--Button choice -->
+            <div id="button-choice">
+                <button aria-label="Resurrection Stone" class="selected" data-type="0">Resurrection Stone</button>
+                <button aria-label="Elder Wand" class="selected" data-type="1">Elder Wand</button>
+                <button aria-label="Invisibility Cloak" class="selected" data-type="2">Invisibility Cloak</button>
+            </div>
 
-            <!-- Modal content -->
-            <div id="rules-modal-border">
-                <div class="modal-rules-content">
-                    <div class="modal-header">
-                        <span class="close">&times;</span>
-                        <h2>Rules</h2>
-                    </div>
+            <div id="outcome-sentence">
+                <span id="decision">Ready To Duel?</span>
+            </div>
+        </section>
+        <!-- Game area with scores and images for choice selected -->
+        <div class="result-area">
 
-                    <div class="modal-rules-body">
-                        <p>Elder Wand <span class="versus">Destroys</span> Invisibility Cloak<br><br>Invisibility Cloak
-                            <span class="versus">Outsmarts</span> Resurrection
-                            Stone<br><br>Resurrection Stone <span class="versus">Eliminates</span> Elder Wand
-                        </p>
-                        <div id="modal-images">
-                            <p class="hover-instructions">Hover/Tap over the images to see what the weapons are.</p>
-                            <img id="resurrection-stone-hover" src="assets/images/resurrection-stone.webp"
-                                alt="Resurrection Stone">
-                            <div id="stone-hover">Resurrection Stone</div>
-                            <img id="elder-wand-hover" src="assets/images/elder-wand.webp" alt="Elder Wand">
-                            <div id="wand-hover">Elder Wand</div>
-                            <img id="invisibility-cloak-hover" src="assets/images/invisibility-cloak.webp"
-                                alt="Invisibility Cloak">
-                            <div id="cloak-hover">Invisibility Cloak</div>
-                        </div>
+            <!-- Left side image -->
+            <div id="user-side-image">
+                <h3 class="scores">Player Score: <span id="player-score">0</span></h3>
+                <img id="user-image" class="run-game-image" src="assets/images/deathly-hallows-black.webp"
+                    alt="Deathly hallows symbol, which changes apon click to either a wand, cloak or stone">
+            </div>
 
-                        <button id="modal-choices-btn" aria-label="Resurrection Stone, Elder Wand, Invisibility Cloak">Choices</button>
-
-                    </div>
-                </div>
+            <!-- Right side image -->
+            <div id="computer-side-image">
+                <h3 class="scores">Dark Lord Score: <span id="computer-score">0</span></h3>
+                <img id="computer-image" class="run-game-image" src="assets/images/deathly-hallows-black.webp"
+                    alt="Deathly hallows symbol, which changes apon click to either a wand, cloak or stone">
             </div>
         </div>
 
-        <!--Button choice -->
-        <div id="button-choice">
-            <button aria-label="Resurrection Stone" class="selected" data-type="0">Resurrection Stone</button>
-            <button aria-label="Elder Wand" class="selected" data-type="1">Elder Wand</button>
-            <button aria-label="Invisibility Cloak" class="selected" data-type="2">Invisibility Cloak</button>
-        </div>
-
-        <div id="outcome-sentence">
-            <span id="decision">Ready To Duel?</span>
-        </div>
-    </section>
-    <!-- Game area with scores and images for choice selected -->
-    <div class="result-area">
-
-        <!-- Left side image -->
-        <div id="user-side-image">
-            <h3 class="scores">Player Score: <span id="player-score">0</span></h3>
-            <img id="user-image" class="run-game-image" src="assets/images/deathly-hallows-black.webp"
-                alt="Deathly hallows symbol, which changes apon click to either a wand, cloak or stone">
-        </div>
-
-        <!-- Right side image -->
-        <div id="computer-side-image">
-            <h3 class="scores">Dark Lord Score: <span id="computer-score">0</span></h3>
-            <img id="computer-image" class="run-game-image" src="assets/images/deathly-hallows-black.webp"
-                alt="Deathly hallows symbol, which changes apon click to either a wand, cloak or stone">
-        </div>
-    </div>
+    </main>
 
     <!-- Page load modal -->
     <div id="page-load-modal">
@@ -115,7 +81,47 @@
         </div>
     </div>
 
-    <!-- Game rules in the footer -->
+    <!-- Used W3C for inspiration and help on how to make a modal 
+        https://www.w3schools.com/howto/howto_css_modals.asp -->
+
+    <!-- The game rules modal -->
+    <div id="my-rules-modal" class="modal-rules">
+
+        <!-- Game rules modal content -->
+        <div id="rules-modal-border">
+            <div class="modal-rules-content">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2>Rules</h2>
+                </div>
+
+                <div class="modal-rules-body">
+                    <p>Elder Wand <span class="versus">Destroys</span> Invisibility Cloak<br><br>Invisibility
+                        Cloak
+                        <span class="versus">Outsmarts</span> Resurrection
+                        Stone<br><br>Resurrection Stone <span class="versus">Eliminates</span> Elder Wand
+                    </p>
+                    <div id="modal-images">
+                        <p class="hover-instructions">Hover/Tap over the images to see what the weapons are.</p>
+                        <img id="resurrection-stone-hover" src="assets/images/resurrection-stone.webp"
+                            alt="Resurrection Stone">
+                        <div id="stone-hover">Resurrection Stone</div>
+                        <img id="elder-wand-hover" src="assets/images/elder-wand.webp" alt="Elder Wand">
+                        <div id="wand-hover">Elder Wand</div>
+                        <img id="invisibility-cloak-hover" src="assets/images/invisibility-cloak.webp"
+                            alt="Invisibility Cloak">
+                        <div id="cloak-hover">Invisibility Cloak</div>
+                    </div>
+
+                    <button id="modal-choices-btn"
+                        aria-label="Resurrection Stone, Elder Wand, Invisibility Cloak">Choices</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Social links in the footer -->
     <footer>
         <ul>
             <li class="social-icons"><a href="https://github.com/Antonyeaster" target="_blank" rel="noopener"

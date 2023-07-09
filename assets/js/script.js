@@ -101,7 +101,7 @@ function incrementComputerScore() {
  */
 gameRuleBtn.onclick = function () {
     modal.style.display = "block";
-    this.setAttribute('aria hidden', true);
+    this.setAttribute('aria-hidden', false);
 };
 
 /**
@@ -110,7 +110,7 @@ gameRuleBtn.onclick = function () {
  */
 closeBtn.onclick = function () {
     modal.style.display = "none";
-    this.removeAttribute('aria hidden', false);
+    this.removeAttribute('aria-hidden', true);
 };
 
 /**
@@ -120,6 +120,7 @@ closeBtn.onclick = function () {
 window.onclick = function (event) {
     if (event.target == modal) {
         modal.style.display = "none";
+        setAttribute('aria-hidden', true)
     }
 };
 

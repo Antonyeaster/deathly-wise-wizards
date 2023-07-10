@@ -106,7 +106,7 @@ Deathly Wise Wizards is a game very much like rock, paper, scissors. However, th
 
 ![Colours](/documentation/design/colours.png)
 
-I used a small amount of solid block colours which I ran through the [Eight Shapes Contrast Grid](https://contrast-grid.eightshapes.com/?version=1.1.0&background-colors=&foreground-colors=%23F0FFFF%0D%0A%23000000%0D%0A%238505A8%0D%0A%2315FD38&es-color-form__tile-size=regular&es-color-form__show-contrast=aaa&es-color-form__show-contrast=aa&es-color-form__show-contrast=aa18&es-color-form__show-contrast=dnp) to make sure the contrast was acceptable and easy to read.
+I used a small amount of solid block colours which I ran through the [Eight Shapes Contrast Grid](https://contrast-grid.eightshapes.com/?version=1.1.0&background-colors=&foreground-colors=%23F0FFFF%0D%0A%23000000%0D%0A%238505A8%0D%0A%2315FD38%0D%0A%23045a9c&es-color-form__tile-size=regular&es-color-form__show-contrast=aaa&es-color-form__show-contrast=aa&es-color-form__show-contrast=aa18&es-color-form__show-contrast=dnp) to make sure the contrast was acceptable and easy to read.
 
 ### Typography
 
@@ -157,6 +157,10 @@ The main game page is a simple design but with everything the user will need to 
 The Game rules button is an important feature as it opens up a modal which explains everything you need to know to win.
 
 ![Game Rules Button](/documentation/design/game-rules-button.png)
+
+The game rules button also features in the page load modal, this way the user can study the rules prior to entering the game.
+
+![Game Rules Button inside page load modal](/documentation/design/play-game-game-rules.png)
 
 #### Game Rules Modal
 
@@ -218,6 +222,14 @@ It's vital to make websites as accessible and easy to follow as poss
 * Using a colour contrast that is easy to see
 
 I also used [Wave - Web accessibility evaluation tools](https://wave.webaim.org/) to make sure I had no errors regarding colour contrast and aria labels.
+
+### Future Implementations
+
+In the future I would like to add the following features:
+
+* Add a score cap of 10 with winning/losing modals
+* Add a enter a username and use it to replace (player score)
+* Add an option for themed sound effects and background music   
 
 
 ## **Technologies Used**
@@ -296,9 +308,12 @@ The following issues were raised during my mid-way project mentor meeting:
 
 ### W3C Validator 
 
-* [Index Page HTML](/documentation/testing/w3c-html-validation.png)
-* [Style.css CSS Jigsaw](/documentation/testing/css-jigsaw-validation.png)
-* [JSHint](/documentation/testing/jshint-validator.png)
+**HTML Validation**
+* ![Index Page HTML](/documentation/testing/w3c-html-validation.png)
+**CSS Validation**
+* ![Style.css CSS Jigsaw](/documentation/testing/css-jigsaw-validation.png)
+**JSHint Validation**
+* ![JSHint](/documentation/testing/jshint-validator.png)
 
 1. The HTML passed through the W3C validator with no errors.
 2. The CSS passed through the jigsaw validator with no errors.

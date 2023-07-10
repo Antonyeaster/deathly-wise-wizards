@@ -200,7 +200,7 @@ The game area is split into two, one side for the user and the other for the com
 
 ![Game Area](/documentation/design/game-area.png)
 
-Once the game is running, the images will chamge accordingly to the selection the user and the computer make. 
+Once the game is running, the images will change accordingly to the selection the user and the computer make. 
 
 ![Game Running](/documentation/design/game-running.png)
 

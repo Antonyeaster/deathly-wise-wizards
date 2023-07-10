@@ -38,6 +38,7 @@ The game offers endless amounts of fun and luck that can be enjoyed on a whole r
      * [Game Area](#Game-Area)
      * [Footer](#Footer)
   * [Accessibilty](#Accessibilty)
+  * [Future Implementations](#Future-Implementations)
 
 * [Technologies Used](#Technologies-Used)
   * [Languages Used](#Languages-Used)
@@ -57,6 +58,7 @@ The game offers endless amounts of fun and luck that can be enjoyed on a whole r
 
 * [Credits](#Credits) 
   * [Content](#Content)
+    * [Full Disclaimer](#Full-Disclaimer)
   * [Media](#Media)
   * [Code Help](#Code-Help)
   * [Acknowledgments](#Acknowledgments)
@@ -84,7 +86,7 @@ Deathly Wise Wizards is a game very much like rock, paper, scissors. However, th
 ## Site Aims
 
 1. To provide a game that has similar characteristics to another one but a different theme
-2. To keep track of the current game scores
+2. To keep track of the current game scores
 3. A simple and easy-to-find set of instructions
 4. To the best of my ability, make a game that a visually impaired individual can play.
 5. To keep a single page simple design
@@ -92,9 +94,9 @@ Deathly Wise Wizards is a game very much like rock, paper, scissors. However, th
 
 ## To Can This Be Achived 
 
-1. Keep the game as close to rock, paper, scissors as possible
+1. Keep the game as close to rock, paper, scissors as possible
 2. To keep the score tally increasing by one for whoever wins or to hold still if a draw happens
-3. A button right in the middle that clearly indicates game rules
+3. A button right in the middle that clearly indicates game rules
 4. With semantic elements, aria labels and alternate text tags
 5. By keeping the design simple and without too much information on the page
 6. Create a serarate winning, losing, or draw sentence and apply it to each individual outcome
@@ -363,9 +365,13 @@ I also used Chrome Dev Tools to test the responsiveness of the site down to 325 
 
 ### Content
 
-* The content of the project was written by myself, Antony Easter
-*  Other references within the site are the property of the Harry Potter film Series **(J.K. Rowling and Warner Bros)**
-*  The site has been made for educational purposes only
+* The content of the project was written and designed by myself, Antony Easter
+* Anything that I have not written myself or that I have used the idea of, is stated below
+
+  #### Full disclaimer
+
+  * The general theme and some references within the site are the property of the Harry Potter film Series **(J.K. Rowling and Warner Bros)**
+  * The site has been made for educational purposes only 
 
 ### Media
 
@@ -387,6 +393,6 @@ All images were taken from Google Images and were used for educational purposes:
 I would like to acknowledge the following people and communities for their help with completing my second milestone project:
 
 * The Slack Community
-*  My family and friends for taking the time to check the responsiveness on their phones.
+* My family and friends for taking the time to check the responsiveness on their phones.
 * My mentor, David Bowers, for all the support and encouragement he has supplied.
 * Tutor support at Code Institute for help with 

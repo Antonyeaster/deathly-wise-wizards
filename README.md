@@ -19,7 +19,7 @@ The game offers endless amounts of fun and luck that can be enjoyed on a whole r
   * [Targeted Audiance](#Targeted-Audiance)
   * [User Stories](#User-Stories)
   * [Site Aims](#Site-Aims)
-  * [To Can This Be Achived](#To-Can-This-Be-Achived)
+  * [How Can This Be Achived](#How-Can-This-Be-Achived)
 
 * [Design](#Design)
 
@@ -79,8 +79,8 @@ Deathly Wise Wizards is a game very much like rock, paper, scissors. However, th
 #### Client Goals
 
 * Have a clear indication of the game rules and what beats what
-*  Give people on their own a chance to play a game without needing a second player
-*  Link the theme of the site with the way of the wizarding world
+* Give people on their own a chance to play a game without needing a second player
+* Link the theme of the site with the way of the wizarding world
 * Give the player and computer scores to allow the user to keep track
 
 ## Site Aims
@@ -92,7 +92,7 @@ Deathly Wise Wizards is a game very much like rock, paper, scissors. However, th
 5. To keep a single page simple design
 6. To give the user feedback on wins, losses, and draws
 
-## To Can This Be Achived 
+## How Can This Be Achived 
 
 1. Keep the game as close to rock, paper, scissors as possible
 2. To keep the score tally increasing by one for whoever wins or to hold still if a draw happens
@@ -132,6 +132,8 @@ The wireframes were created on [Balsamiq](https://balsamiq.com/wireframes/?gad=1
 
 * [Mobile Game Page](/documentation/design/wireframe-balsamiq-mobile-design.png)
 
+While creating the game I decided it would be best to also add a Game Rules button in the page load madal, which wasn't in my original design.
+
 ## Features
 
 ### Initial Load Page
@@ -140,7 +142,7 @@ I have created a modal that displays when the game is first loaded.
 
 ![Page Load Modal](/documentation/design/page-load-modal.png)
 
-* The title name is a clear indication of the type of theme
+* The title is a clear indication of the theme that the game will have
 * The bright border and darkened background bring the user's focus directly to the modal
 
 
@@ -185,11 +187,10 @@ The choices are in image form to allow the user to put an image to a choice name
 #### Game Selection 
 
 The game selection buttons are large and easy to press; once pressed, the game will start, and the user's choice will be displayed in image form.
-The buttons will stack on smaller screens for responsive design.
 
 ![Game Selection](/documentation/design/game-selection.png)
 
-Game on a mobile
+When the game is played on a mobile the screen will shrink accordingly and the weapon buttons will stack on top of each other.
 
 ![Game selection responsive](/documentation/design/responsive-main-page.png)
 
@@ -199,11 +200,11 @@ The game area is split into two, one side for the user and the other for the com
 
 ![Game Area](/documentation/design/game-area.png)
 
-Game Running
+Once the game is running, the images will chamge accordingly to the selection the user and the computer make. 
 
 ![Game Running](/documentation/design/game-running.png)
 
-*  The scores are within the image area for easy viewing
+* The scores are within the image area for easy viewing
 * The text above the images changes as per the outcome (win, lose, or draw).
 * The scores are incremented by one for a win; there is no score movement for a loss or draw.
 
@@ -277,11 +278,11 @@ Github Pages was used to deploy the live website.
 
 The instructions to achieve this are below:
 
-*  Log in to Github
-*  Find the repository for this project, Deathly Wise Wizards
-*  Click on settings
-*  Go to Pages
-*  In the Source section, choose main from the drop down select branch menu. Select Root from the drop down select folder menu.
+* Log in to Github
+* Find the repository for this project, Deathly Wise Wizards
+* Click on settings
+* Go to Pages
+* In the Source section, choose main from the drop down select branch menu. Select Root from the drop down select folder menu.
 * Click save, and your live Github Pages site will be deployed at the URL shown
 
 You can find the live site by the following URL - [Deathly Wise Wizards](https://antonyeaster.github.io/deathly-wise-wizards/)
@@ -295,9 +296,6 @@ To Fork the PUP HQ repository:
 * Log in to Github
 * Go to the repository - Antonyeaster/deathly-wise-wizards
 * Select the fork button in the top right hand corner
-
-
-
 
 ## **Testing**
 
@@ -353,7 +351,7 @@ To completly test my site I used multiple browsers including:
 1. Google Chrome
 2. Firefox
 3. Microsoft Edge
-4. Safari (IOS ipadOS)
+4. Safari (IOS and ipadOS)
 
 These tests were done on devices such as the iPhone 14 Pro Max, iPhone 12 Pro, Ipad and HP laptop.
 

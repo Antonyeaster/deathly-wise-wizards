@@ -108,7 +108,7 @@ html {
     font-size: 20px;
 }
 
-/* game result text */
+/* Game result text */
 #outcome-sentence {
     margin: 1rem 0;
 }
@@ -217,7 +217,7 @@ https://www.w3schools.com/howto/howto_css_modals.asp */
     background-color: rgba(0, 0, 0, 0.9);
 }
 
-/* page load content in page load modal */
+/* Page load content in page load modal */
 .page-load-content {
     position: relative;
     background-color: #8505a8;
@@ -239,7 +239,7 @@ https://www.w3schools.com/howto/howto_css_modals.asp */
     border: 5px solid #045a9c
 }
 
-/* descriptive word describing what beats what */
+/* Descriptive word describing what beats what */
 .versus {
     color: #15fd38;
     text-transform: uppercase;
@@ -275,7 +275,7 @@ https://www.w3schools.com/howto/howto_css_modals.asp */
     cursor: pointer;
 }
 
-/* page load modal header */
+/* Page load modal header */
 .page-load-header {
     font-size: 20px;
     padding: 5px 10px;
@@ -283,7 +283,7 @@ https://www.w3schools.com/howto/howto_css_modals.asp */
     color: azure;
 }
 
-/* information about the game in page load modal */
+/* Information about the game in page load modal */
 .page-load-body {
     margin: 30px 10px;
     width: auto;
@@ -349,7 +349,7 @@ https://www.w3schools.com/howto/howto_css_modals.asp */
     }
 }
 
-/* Style selection buttons for screens below 750px */
+/* Style for screens 750px and below */
 @media screen and (max-width: 750px) {
     .selected {
         display: flex;

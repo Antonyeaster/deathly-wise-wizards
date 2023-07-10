@@ -53,6 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         updateScores(result);
     }
+    
     /**
      * To check who won the game and use the increment score function.
      */

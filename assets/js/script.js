@@ -16,6 +16,7 @@ const wandHover = document.getElementById("wand-hover");
 const cloakHover = document.getElementById("cloak-hover");
 const playerPreviousScore = document.getElementById("player-score");
 const computerPreviousScore = document.getElementById("computer-score");
+const pageLoadGameRulesBtn = document.getElementById("page-load-game-rules-btn");
 
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -112,6 +113,15 @@ document.addEventListener("DOMContentLoaded", function () {
      * the display of the modal is then visable.
      */
     gameRuleBtn.onclick = function () {
+        modal.style.display = "block";
+        this.setAttribute('aria-hidden', false);
+    };
+
+    /**
+     * For modal use, when game rules button is clicked 
+     * inside page load modal.
+     */
+    pageLoadGameRulesBtn.onclick = function () {
         modal.style.display = "block";
         this.setAttribute('aria-hidden', false);
     };

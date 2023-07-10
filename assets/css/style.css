@@ -137,7 +137,7 @@ https://www.w3schools.com/howto/howto_css_modals.asp */
 .modal-rules {
     display: none;
     position: fixed;
-    z-index: 1;
+    z-index: 3;
     padding-top: 60px;
     left: 0;
     top: 0;
@@ -247,6 +247,20 @@ https://www.w3schools.com/howto/howto_css_modals.asp */
 
 /* Play game button in page load modal */
 #play-game-modal-btn {
+    font-family: inherit;
+    font-size: 1rem;
+    width: fit-content;
+    background-color: #000;
+    color: azure;
+    font-size: 15px;
+    font-weight: bolder;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: 5px auto;
+    cursor: pointer;
+}
+
+#page-load-game-rules-btn {
     font-family: inherit;
     font-size: 1rem;
     width: fit-content;

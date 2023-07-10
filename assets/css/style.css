@@ -256,10 +256,11 @@ https://www.w3schools.com/howto/howto_css_modals.asp */
     font-weight: bolder;
     padding: 10px 20px;
     border-radius: 10px;
-    margin: 5px auto;
+    margin: 10px auto;
     cursor: pointer;
 }
 
+/* Game Rules button inside page load modal */
 #page-load-game-rules-btn {
     font-family: inherit;
     font-size: 1rem;
@@ -270,7 +271,7 @@ https://www.w3schools.com/howto/howto_css_modals.asp */
     font-weight: bolder;
     padding: 10px 20px;
     border-radius: 10px;
-    margin: 5px auto;
+    margin: 10px auto;
     cursor: pointer;
 }
 
